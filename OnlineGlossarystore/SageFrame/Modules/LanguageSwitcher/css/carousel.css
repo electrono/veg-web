@@ -1,0 +1,72 @@
+﻿div.cssClassCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 1px 0 0 0;
+    margin: 0 0 0 5px;
+}
+
+div.cssClassCarousel ul {
+    position: relative;
+    left: -5px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+div.cssClassCarousel ul li {
+    float: left;
+    list-style: none;
+    margin: 3px 0 0 0;
+    padding: 4px;
+}
+
+div.cssClassCarousel ul li img {
+    cursor: pointer;
+    cursor: hand;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+div.cssClassLeftScroll, div.cssClassRightScroll {
+    float: left;
+    height: 22px;
+    width: 15px;
+    padding-top: 6px;
+}
+
+div.cssClassLeftScroll img, div.cssClassRightScroll img {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.CssClassLanguageWrapper {
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid #dfc388;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.CssClassLanguageWrapperInside {
+    border: 1px solid #fff;
+    background-color: #fff5e1;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+div.cssClassCarousel ul li.cssClassSelectedFlag {
+    background: white;
+    border: 1px solid #DFC388;
+}
+
+div.cssClassCarousel ul li a {
+    float: left;
+    margin: 0;
+    padding: 0;
+}

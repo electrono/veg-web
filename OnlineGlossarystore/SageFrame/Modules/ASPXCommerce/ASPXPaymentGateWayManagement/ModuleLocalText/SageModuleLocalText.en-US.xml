@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<SageFrameMessage>
+  <YouNeedToSelectAFileToUploadFirst>
+    You need to select a file to upload first - click the Browse button to locate the file on your local file system.
+  </YouNeedToSelectAFileToUploadFirst>
+  <InvalidFileExtension>
+    Invalid File Extension -
+  </InvalidFileExtension>
+  <PaymentGatewayInstalledSuccessfully>
+    This Payment Gateway is installed successfully!
+  </PaymentGatewayInstalledSuccessfully>
+  <AlreadyExistPaymentGateway>
+    This Payment Gateway already Exists!
+  </AlreadyExistPaymentGateway>
+  <WarningMessageWillDeleteAllFiles>
+    Repairing  previous installed Payment Gateway will overwrite all database and files content.
+  </WarningMessageWillDeleteAllFiles>
+  <ThisPackageIsNotValid>
+    This Payment Gateway package does not appear to be a valid SageFrame Extension as it does not have a manifest.
+  </ThisPackageIsNotValid>
+  <ThisPackageDoesNotAppearToBeValid>
+    This Payment Gateway package does not appear to be a valid SageFrame Extension as it does not have a valid manifest.
+  </ThisPackageDoesNotAppearToBeValid>
+  <ThereIsErrorWhileInstallingThisModule>
+    There occured error while installing this Payment Gateway!
+  </ThereIsErrorWhileInstallingThisModule>
+  <ThisPaymentGatewaySeemsToBeCorrupted>
+    This Payment Gateway package has been corrupted!
+  </ThisPaymentGatewaySeemsToBeCorrupted>
+  <PaymentGatewayHasUninstallError>
+    There occured error while uninstalling!
+  </PaymentGatewayHasUninstallError>
+  <PaymentGatewayIsUninstalledSuccessfully>
+    The Payment Gateway is uninstalled successfully.
+  </PaymentGatewayIsUninstalledSuccessfully>
+  <PaymentGatewayFolderDoesnotExist>
+    Conflit Occured. Specified Folder Name doesn't exist in database, you need to conifgure it manually!
+  </PaymentGatewayFolderDoesnotExist>
+</SageFrameMessage>

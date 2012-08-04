@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SageFrame">
+</Property><Property Name="Solution File" Value="C:\Work_Electrono\personal_work\shoppingCart\AspxCommerceSource1.0\SageFrame.sln">
+</Property><Property Name="Date" Value="15 March 2012">
+</Property><Property Name="Time" Value="00:20">
+</Property></Properties><Event ErrorLevel="0" Project="GoogleAdUnit" Source="GoogleAdUnit\GoogleAdUnit.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GoogleAdUnit" Source="GoogleAdUnit\GoogleAdUnit.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.Common" Source="SageFrame.Common\SageFrame.Common.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.Common" Source="SageFrame.Common\SageFrame.Common.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.ContactUs" Source="SageFrame.ContactUs\SageFrame.ContactUs.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.ContactUs" Source="SageFrame.ContactUs\SageFrame.ContactUs.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.FeedBack" Source="SageFrame.FeedBack\SageFrame.FeedBack.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.FeedBack" Source="SageFrame.FeedBack\SageFrame.FeedBack.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.IPAddressToCountryResolver" Source="SageFrame.IPAddressToCountryResolver\SageFrame.IPAddressToCountryResolver.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.IPAddressToCountryResolver" Source="SageFrame.IPAddressToCountryResolver\SageFrame.IPAddressToCountryResolver.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.News" Source="SageFrame.News\SageFrame.News.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.News" Source="SageFrame.News\SageFrame.News.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.Core" Source="SageFrame.Core\SageFrame.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.Core" Source="SageFrame.Core\SageFrame.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.FileManager" Source="SageFrame.FileManager\SageFrame.FileManager.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.FileManager" Source="SageFrame.FileManager\SageFrame.FileManager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.Localization" Source="SageFrame.Localization\SageFrame.Localization.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.Localization" Source="SageFrame.Localization\SageFrame.Localization.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.Security" Source="SageFrame.Security\SageFrame.Security.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.Security" Source="SageFrame.Security\SageFrame.Security.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ASPXCommerce.Core" Source="ASPXCommerce.Core\ASPXCommerce.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ASPXCommerce.Core" Source="ASPXCommerce.Core\ASPXCommerce.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.CorporateBanner" Source="SageFrame.CorporateBanner\SageFrame.CorporateBanner.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.CorporateBanner" Source="SageFrame.CorporateBanner\SageFrame.CorporateBanner.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.SageMenu" Source="SageFrame.SageMenu\SageFrame.SageMenu.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.SageMenu" Source="SageFrame.SageMenu\SageFrame.SageMenu.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SageFrame.BreadCrum" Source="SageFrame.BreadCrum\SageFrame.BreadCrum.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SageFrame.BreadCrum" Source="SageFrame.BreadCrum\SageFrame.BreadCrum.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SageFrame.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SageFrame.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GoogleAdUnit" Source="GoogleAdUnit\GoogleAdUnit.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.Common" Source="SageFrame.Common\SageFrame.Common.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.ContactUs" Source="SageFrame.ContactUs\SageFrame.ContactUs.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.FeedBack" Source="SageFrame.FeedBack\SageFrame.FeedBack.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.IPAddressToCountryResolver" Source="SageFrame.IPAddressToCountryResolver\SageFrame.IPAddressToCountryResolver.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.News" Source="SageFrame.News\SageFrame.News.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.Core" Source="SageFrame.Core\SageFrame.Core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.FileManager" Source="SageFrame.FileManager\SageFrame.FileManager.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.Localization" Source="SageFrame.Localization\SageFrame.Localization.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.Security" Source="SageFrame.Security\SageFrame.Security.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ASPXCommerce.Core" Source="ASPXCommerce.Core\ASPXCommerce.Core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.CorporateBanner" Source="SageFrame.CorporateBanner\SageFrame.CorporateBanner.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.SageMenu" Source="SageFrame.SageMenu\SageFrame.SageMenu.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SageFrame.BreadCrum" Source="SageFrame.BreadCrum\SageFrame.BreadCrum.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

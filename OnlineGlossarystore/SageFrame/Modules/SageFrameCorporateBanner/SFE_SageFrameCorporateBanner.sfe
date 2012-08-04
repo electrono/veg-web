@@ -1,0 +1,56 @@
+﻿<sageframe version="1.0.0.0" type="Module">
+  <folders>
+    <folder>
+      <name>SFE_SageFrameCorporateBanner</name>
+      <friendlyname>SageFrameCorporateBanner</friendlyname>
+      <foldername>SageFrameCorporateBanner</foldername>
+      <modulename>SageFrameCorporateBanner</modulename>
+      <description>This module is used for SageFrame CorporateBanner.</description>
+      <version>01.00.00</version>
+      <businesscontrollerclass>SageFrame.Modules.SageFrameCorporateBanner.EventController, SageFrame.Modules.SageFrameCorporateBanner</businesscontrollerclass>
+      <compatibleversions>^[0]?[4-9]{1}\.[0-9]{1}[7-9]{1}\.[0-9]{1}[0-9]{1}$</compatibleversions>
+      <owner>BrainDigit IT Soultion Pvt. Ltd.</owner>
+      <organization>BrainDigit IT Soultion Pvt. Ltd.</organization>
+      <url>www.braindigit.com</url>
+      <email>info@sageframe.com</email>
+      <releasenotes>This is test release notes for SageFrame CorporateBanner Application</releasenotes>
+      <license>This is test license copy for SageFrame CorporateBanner Application</license>
+      <modules>
+        <module>
+          <friendlyname>SageFrameCorporateBanner</friendlyname>
+          <cachetime>-1</cachetime>
+          <controls>
+            <control>
+			  <key>SageFrameCorporateBannerViewContainer</key>
+              <title>SageFrameCorporateBanner View Container</title>
+              <src>Modules/SageFrameCorporateBanner/BannerView.ascx</src>
+              <type>View</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>false</supportspartialrendering>
+            </control>  
+<control>
+			  <key>SageFrameCorporateBannerEditContainer</key>
+              <title>SageFrameCorporateBanner Edit Container</title>
+              <src>Modules/SageFrameCorporateBanner/BannerEdit.ascx</src>
+              <type>Edit</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>false</supportspartialrendering>
+            </control>     			
+          </controls>
+        </module>
+      </modules>
+      <files>
+        <file>
+          <name>01.00.00.SqlDataProvider</name>
+        </file>   
+<file>
+          <name>SageFrame.CorporateBanner.dll</name>
+        </file>        
+             
+        <file>
+          <name>Uninstall.SqlDataProvider</name>
+        </file> 
+      </files>
+    </folder>
+  </folders>
+</sageframe>

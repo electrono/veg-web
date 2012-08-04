@@ -1,0 +1,178 @@
+﻿.cssClassColorScheme {
+    width: 243px;
+    background-color: #D5E1DD;
+}
+
+.cssClassColorScheme td {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.cssClassColorScheme td.cssClassNoBorder { border-right: none; }
+
+.cssClassColorScheme_Red {
+    background-color: #F00;
+    height: 20px;
+}
+
+.cssClassColorScheme_Black {
+    background-color: #000;
+    height: 20px;
+}
+
+.cssClassColorScheme_Blue {
+    background-color: #06C;
+    height: 20px;
+}
+
+.cssClassColorScheme_Green {
+    background-color: #3C3;
+    height: 20px;
+}
+
+.cssClassColorScheme_White {
+    background-color: #fff;
+    height: 20px;
+}
+
+.cssClassColorScheme_Purple {
+    background-color: #F0F;
+    height: 20px;
+}
+
+.cssClassColorScheme_Gray {
+    background-color: #999;
+    height: 20px;
+}
+
+.cssClassColorScheme_Orange {
+    background-color: #F93;
+    height: 20px;
+}
+
+.cssClassColorScheme_Orange {
+    background-color: #F93;
+    height: 20px;
+}
+
+.cssClassColorScheme_Yellow {
+    background-color: #FF0;
+    height: 20px;
+}
+    
+    /*---------------------------------------POOL PART START----------------------------------------------*/
+
+.cssClassPoolPage {
+    background-color: #fff5d9;
+    padding: 10px;
+    border: 1px solid #E8D5A2;
+}
+
+.cssClassPoolPage .cssClassFormWrapper { padding: 0 0 10px 0; }
+
+.cssClassPoolPage .cssClassFormWrapper .cssClassFormlabel { padding: 0 0 0 10px; }
+
+.cssClassPoolPage .cssClassFormWrapperAnswer {
+    background-color: #fff;
+    padding: 0 0 10px 0;
+}
+
+.cssClassPoolPage .cssClassFormWrapper h2 { margin: 0 0 10px 0; }
+
+.cssClassPoolPage .cssClassGridWrapper table td, .cssClassGridWrapper table th { padding: 0; }
+
+.cssClassPoolPage .cssClassFormWrapperAnswerDetails {
+    background-color: #fffaeb;
+    padding: 0;
+    border: 1px solid #dcdcdc;
+}
+
+.cssClassPollAnswerHeading {
+    background-color: #ebebeb;
+    border-bottom: 1px solid #cccccc;
+    color: #5E5E5E;
+    font: bold 16px/30px Arial, Helvetica, sans-serif !important;
+    margin-bottom: 0;
+    padding: 0 0 3px 5px;
+    height: 30px;
+    margin: 0 0 10px 0;
+}
+
+.cssClassFormWrapperAnswer input.cssClassNormalTextBox {
+    background-color: #fff !important;
+    border: 1px solid #cccccc !important;
+}
+
+.cssClassPollAnswer {
+    border-bottom: 1px solid #ffecb9;
+    color: #5E5E5E;
+    font: bold 12px/30px Arial, Helvetica, sans-serif !important;
+    margin-bottom: 0;
+    padding: 0 0 3px 10px;
+    height: 30px;
+}
+
+.cssClassPoolQuestion {
+    background-color: #dcdcdc !important;
+    border-bottom: 1px solid #E8D5A2;
+    color: #5E5E5E;
+    font: bold 16px/30px Arial, Helvetica, sans-serif !important;
+    height: 30px;
+    margin-bottom: 0;
+    padding: 0 0 3px 5px;
+    display: block;
+}
+
+.cssClassPollDate {
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #333;
+    padding: 0 0 0 10px;
+}
+
+.cssClassPollDate span {
+    font-weight: bold;
+    color: #333;
+    padding: 0 0 0 10px;
+}
+
+.cssClassContentOutsideWrapper {
+    background-color: #fff5d9;
+    border: 1px solid #E8D5A2;
+}
+
+.cssClassContentOutsideWrapper input {
+    float: left;
+    height: 28px;
+}
+
+.cssClassContentOutsideWrapper label {
+    float: left;
+    font: bold 11px/28px Arial, Helvetica, sans-serif;
+    color: #C63;
+    padding: 0 0 0 10px;
+}
+
+.cssClassPoolVoteControl input {
+    float: left;
+    height: 28px;
+}
+
+.cssClassPoolVoteControl label {
+    float: left;
+    font: bold 11px/28px Arial, Helvetica, sans-serif;
+    color: #C63;
+    padding: 0 0 0 10px;
+}
+
+.cssClassButtonWrapper input.cssClassVote {
+    background-color: #FFB734;
+    height: 22px;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    color: #ededed;
+    width: 80px;
+    cursor: pointer;
+}
+
+.cssClassButtonWrapper input.cssClassVote:hover { background-color: #C90; }
+
+.cssClassPoolSetting table { width: 100%; }

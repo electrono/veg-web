@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="CustomerGroupsManagement.ascx.cs" Inherits="Modules_ASPXCommerce_ASPXCustomerManagement_CustomerGroupsManagement" %>

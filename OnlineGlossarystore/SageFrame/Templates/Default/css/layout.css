@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------DEMO LOGIN INFORMATION -------------------*/
+
+.cssClassSFDemoLoginInfoL {
+    background: url(../images/demo-login-leftbg.jpg) no-repeat left top;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 69px;
+    padding: 0 0 0 11px;
+    overflow: hidden;
+}
+
+.cssClassSFDemoLoginInfoR {
+    background: url(../images/demo-login-rightbg.jpg) no-repeat right top;
+    height: 69px;
+    padding: 0 11px 0 0;
+}
+
+.cssClassSFDemoLoginInfoM {
+    background: url(../images/demo-login-midbg.jpg) repeat-x top;
+    height: 69px;
+    padding: 0 5px;
+}
+
+.cssClassSFDemoLoginInfoM p {
+    float: left;
+    padding: 5px 15px 5px 0px;
+    margin: 0;
+    font: 11px/15px Arial, Helvetica, sans-serif;
+}
+
+.cssClassSFDemoLoginInfoM p b {
+    display: block;
+    line-height: 20px;
+}
+
+.cssClassLoginDemoLine {
+    border-left: 1px solid #dbd8d5;
+    height: 69px;
+    padding: 5px 0 0 15px !important;
+}
+
+.cssClasstwoBlocks { overflow: hidden; }
+
+.cssClassRightForm {
+    float: left;
+    padding-left: 10px;
+}
+
+.cssClassLeftForm {
+    float: left;
+    width: 622px;
+}
+
+.cssClassLeftForm h1 {
+    color: #006699;
+    padding: 10px 12px;
+    font: bold 16px/16px Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 0 #FCEEDE;
+    background: url(../images/openstore.png) no-repeat 0 0;
+    text-indent: 32px;
+}
+
+.cssClassLeftForm .cssClassButtonWrapper input {
+    border: 1px solid #25aed5;
+    background: url(../images/loginbg.png) repeat-x;
+    height: 28px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.cssClassRightForm .cssClassloginbox {
+    padding: 0;
+    background: rgba(118, 118, 118, 0.1);
+    border: none !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; /* border-left:1px solid #ccc !important;-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px; */
+}
+
+.cssClassRightForm .cssClassloginbox .cssClassButtonWrapper span span input,
+.cssClassLeftForm .cssClassButtonWrapper input {
+    font: bold 12px/30px Arial, Helvetica, sans-serif !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cssClassLeftForm input.cssClassNormalTextBox {
+    width: 170px !important;
+    float: right;
+    margin-right: 0;
+}
+
+.cssClassRightForm .cssClassloginbox .cssClassTextBox input {
+    padding: 0 5px !important;
+    margin: 0 !important;
+}
+
+.cssClassRightForm .cssClassloginbox label.cssClassNormalText {
+    font: 12px segoe, Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+
+.cssClassLeftForm select, .cssClassRightForm select {
+    width: 180px !important;
+    margin-right: 3px !important;
+    float: right;
+}
+
+.cssClassRightForm .cssClassloginboxInsideDetails { padding-top: 23px; }
+
+
+.cssClassLeftForm td span {
+    white-space: nowrap;
+    float: right;
+}
+
+.cssClassLeftForm .cssClassFormLabel {
+    white-space: normal !important;
+    float: none;
+}
+
+
+/*----*/
+
+.sfLogincontrol {
+    background: #fafbfc url(../images/top-bg.png) repeat-x;
+    overflow: hidden;
+    padding: 10px 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 1000px;
+    margin: 20px auto;
+    -webkit-box-shadow: 0 0 2px #FFFFFF inset;
+    -moz-box-shadow: 0 0 2px #FFFFFF inset;
+    box-shadow: 0 0 2px #FFFFFF inset;
+    border: 1px solid #96D4E8 !important;
+}
+
+.sfLogincontrol .cssClassloginbox {
+    width: 320px !important;
+    margin-top: 87px;
+    min-height: 277px; /*padding:0 0 0 20px; min-height:321px; -webkit-box-shadow:0 0 2px #FFFFFF inset; -moz-box-shadow:0 0 2px #FFFFFF inset;box-shadow:0 0 2px #FFFFFF inset;*/
+}
+
+.sfLogincontrol .cssClassRightForm { float: right; }
+
+.sfLogincontrol p, .sfLogincontrol span.cssClassFormLabel, .sfLogincontrol select {
+    font: normal 12px Arial, Helvetica, sans-serif;
+    color: #446c85;
+}
+
+.sfLogincontrol span.cssClassFormLabel { font-weight: bold; }
+
+.sfLogincontrol .cssClassLeftForm h1 {
+    text-shadow: 1px 1px 1px #fff;
+    ;
+    background: url(../images/openstore.png) no-repeat 0 0;
+    text-indent: 32px;
+}
+
+.sfLogincontrol .cssClassLeftForm input.cssClassNormalTextBox, .sfLogincontrol select, .sfLogincontrol .cssClassRightForm .cssClassloginbox .cssClassTextBox input {
+    padding: 7px;
+    width: 210px !important;
+    -moz-box-shadow: inset 0 1px 5px #C3DEF2;
+    -webkit-box-shadow: inset 0 1px 5px #C3DEF2;
+    box-shadow: inset 0 1px 5px #C3DEF2;
+}
+
+.sfLogincontrol select {
+    width: 227px !important;
+    margin-right: 0 !important;
+}
+
+.sfLogincontrol .cssClassLeftForm .cssClassButtonWrapper input {
+    background: url(../images/trialbtn.png) no-repeat;
+    width: 228px;
+    height: 45px;
+    margin-top: 10px;
+    text-indent: -999em;
+    border: none !important;
+}
+
+.sfLogincontrol .cssClassloginboxInside { padding: 0; }
+
+
+.sfLogincontrol .cssClassRightForm .cssClassloginboxInsideDetails { padding-top: 14px; }
+
+.sfLogincontrol .cssClassRightForm .cssClassloginbox p.cssClassTextBox { overflow: hidden; }
+
+.sfLogincontrol .cssClassRightForm .cssClassloginbox .cssClassTextBox input {
+    padding: 7px !important;
+    height: 14px;
+    float: left;
+}
+
+.sfLogincontrol .cssClassRightForm .cssClassloginbox .cssClassTextBox span.cssClassusernotfound { float: left; }
+
+.sfLogincontrol .cssClassRightForm .cssClassLoginLeftBox { width: 270px; }
+
+.sfLogincontrol .cssClassRightForm p, .sfLogincontrol .cssClassRightForm .cssClassloginbox label.cssClassNormalText {
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #446c85;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 0 0 5px 0;
+    display: block;
+}
+
+.sfLogincontrol .cssClassRightForm .cssClassButtonWrapper input { padding: 3px 15px; }
+
+
+.templates h2 {
+    clear: both;
+    font: bold 20px/30px Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    margin: 15px 0 10px;
+    background: url(../images/look.png) no-repeat;
+    padding-left: 35px;
+    color: #08ace2;
+}
+
+.templates li, .features {
+    float: left;
+    margin: 25px 20px;
+}
+
+.templates p { padding-left: 20px; }
+
+.templates li a img {
+    display: block;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 0 3px #999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.templates li a img:hover { box-shadow: 0 0 5px #24acd8; }
+
+.features li {
+    background: url(../images/tick.png) no-repeat 0 center;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 21px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.sfLogincontrol .cssClassloginbox h1 {
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 14px;
+}
+
+/*
+.cssClassAlreadyExist { color:#2b93c6 }*/
+
+.cssClassFooterWrapperLeftCenterRight > div { min-width: 200px; }
+
+
+.cssClassLeftForm .cssClassButtonWrapper { float: right; }
+
+
+.cssClassLogo h1 { padding-bottom: 15px; }
+
+.templates li a.demobtn {
+    background: url("../images/nav_bar_active.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #96BC01;
+    margin: 10px 66px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 #D4E499 inset;
+    color: #FFFFFF;
+    display: inline-block;
+    font: 17px/37px Tahoma, Geneva, sans-serif;
+    height: 37px;
+    padding: 0 15px;
+    text-shadow: 0 1px 1px #85A701;
+    text-transform: uppercase;
+}

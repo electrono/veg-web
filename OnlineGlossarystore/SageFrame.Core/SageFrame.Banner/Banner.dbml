@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SageFrameWebSite" Class="BannerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.3.26;Initial Catalog=SageFrame;User ID=sa" SettingsObjectName="SageFrame.Banner.Properties.Settings" SettingsPropertyName="SageFrameConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_BannerCategoryAdd" Method="sp_BannerCategoryAdd">
+    <Parameter Name="BannerName" Parameter="bannerName" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerImageAdd" Method="sp_BannerImageAdd">
+    <Parameter Name="ImageExtension" Parameter="imageExtension" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="LargeImagePath" Parameter="largeImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="MediumImagePath" Parameter="mediumImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="SmallImagePath" Parameter="smallImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerDeletebyBannerCategoryID" Method="sp_BannerDeletebyBannerCategoryID">
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DeletedBy" Parameter="deletedBy" Type="System.String" DbType="NVarChar(255)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerImageUpdate" Method="sp_BannerImageUpdate">
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ImageExtension" Parameter="imageExtension" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="LargeImagePath" Parameter="largeImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="MediumImagePath" Parameter="mediumImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="SmallImagePath" Parameter="smallImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerCategoryUpdate" Method="sp_BannerCategoryUpdate">
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="BannerName" Parameter="bannerName" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="UpdatedBy" Parameter="updatedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerSettingGetAll" Method="sp_BannerSettingGetAll">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerSettingGetAllResult">
+      <Column Name="BannerSettingID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerSettingKey" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="BannerSettingValue" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerCategoryGetAllActive" Method="sp_BannerCategoryGetAllActive">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerCategoryGetAllActiveResult">
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerCategoryOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerCategoryGetAll" Method="sp_BannerCategoryGetAll">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="GetInactive" Parameter="getInactive" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="sp_BannerCategoryGetAllResult">
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerCategoryOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerAdd" Method="sp_BannerAdd">
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerHeading" Parameter="bannerHeading" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="BannerShortDescription" Parameter="bannerShortDescription" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="BannerLongDescription" Parameter="bannerLongDescription" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsShowInBanner" Parameter="isShowInBanner" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerArticleGetAll" Method="sp_BannerArticleGetAll">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="GetInactive" Parameter="getInactive" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="sp_BannerArticleGetAllResult">
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BannerHeading" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="BannerShortDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerLongDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BannerOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShowInBanner" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_DeleteBannerArticlebyBannerID" Method="sp_DeleteBannerArticlebyBannerID">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DeletedBy" Parameter="deletedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerArticleImageUpdate" Method="sp_BannerArticleImageUpdate">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ImageExtension" Parameter="imageExtension" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="LargeImagePath" Parameter="largeImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="MediumImagePath" Parameter="mediumImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="SmallImagePath" Parameter="smallImagePath" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerArticleUpdate" Method="sp_BannerArticleUpdate">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerHeading" Parameter="bannerHeading" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="BannerShortDescription" Parameter="bannerShortDescription" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="BannerLongDescription" Parameter="bannerLongDescription" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsShowInBanner" Parameter="isShowInBanner" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UpdatedBy" Parameter="updatedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BannerGetBannerArticle" Method="BannerGetBannerArticle">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="BannerGetBannerArticleResult">
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BannerHeading" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="BannerShortDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerLongDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BannerOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShowInBanner" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerScreenShotAdd" Method="sp_BannerScreenShotAdd">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ImageID" Parameter="imageID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(255)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerScreenShotGetByBannerID" Method="sp_BannerScreenShotGetByBannerID">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerScreenShotGetByBannerIDResult">
+      <Column Name="BannerScreenShotID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerScreenShotOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerDeleteScreenShotbyScreenShotID" Method="sp_BannerDeleteScreenShotbyScreenShotID">
+    <Parameter Name="BannerScreenShotID" Parameter="bannerScreenShotID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DeletedBy" Parameter="deletedBy" Type="System.String" DbType="NVarChar(255)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerArticleGetAllExceptMainBanner" Method="sp_BannerArticleGetAllExceptMainBanner">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerArticleGetAllExceptMainBannerResult">
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BannerHeading" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="BannerShortDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerLongDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BannerOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShowInBanner" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerArticleGetbyBannerID" Method="sp_BannerArticleGetbyBannerID">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerArticleGetbyBannerIDResult">
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BannerHeading" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="BannerShortDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerLongDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BannerOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShowInBanner" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerArticleGetScreenShotbyBannerID" Method="sp_BannerArticleGetScreenShotbyBannerID">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerArticleGetScreenShotbyBannerIDResult">
+      <Column Name="BannerScreenShotID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerScreenShotOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerCategorySortOrderUpdate" Method="sp_BannerCategorySortOrderUpdate">
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MoveUp" Parameter="moveUp" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerArticleSortOrderUpdate" Method="sp_BannerArticleSortOrderUpdate">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MoveUp" Parameter="moveUp" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerScreenShotSortOrderUpdate" Method="sp_BannerScreenShotSortOrderUpdate">
+    <Parameter Name="BannerScreenShotID" Parameter="bannerScreenShotID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MoveUp" Parameter="moveUp" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerCount" Method="sp_BannerCount">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Option" Parameter="option" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CategoryID" Parameter="categoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerCategoryGetbyBannerCategoryID" Method="sp_BannerCategoryGetbyBannerCategoryID">
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerCategoryGetbyBannerCategoryIDResult">
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerCategoryOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerGetByBannerID" Method="sp_BannerGetByBannerID">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerGetByBannerIDResult">
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BannerHeading" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="BannerShortDescription" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="BannerLongDescription" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BannerOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShowInBanner" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerGetbyBannerCategoryID" Method="sp_BannerGetbyBannerCategoryID">
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerGetbyBannerCategoryIDResult">
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerCategoryOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerScreenShotUpdate" Method="sp_BannerScreenShotUpdate">
+    <Parameter Name="BannerScreenShotID" Parameter="bannerScreenShotID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ImageExtension" Parameter="imageExtension" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="LargeImagePath" Parameter="largeImagePath" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="MediumImagePath" Parameter="mediumImagePath" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="SmallImagePath" Parameter="smallImagePath" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="HasFile" Parameter="hasFile" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UpdateBy" Parameter="updateBy" Type="System.String" DbType="NVarChar(255)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerScreenShotGetByBannerScreenShotID" Method="sp_BannerScreenShotGetByBannerScreenShotID">
+    <Parameter Name="BannerScreenShotID" Parameter="bannerScreenShotID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerScreenShotGetByBannerScreenShotIDResult">
+      <Column Name="BannerScreenShotID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerScreenShotOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerSettingUpdate" Method="sp_BannerSettingUpdate">
+    <Parameter Name="SettingKey" Parameter="settingKey" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="BannerSettingValue" Parameter="bannerSettingValue" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_BannerGetBannerArticle" Method="sp_BannerGetBannerArticle">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CategoryID" Parameter="categoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerGetBannerArticleResult">
+      <Column Name="BannerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BannerHeading" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="BannerShortDescription" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="BannerLongDescription" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BannerOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShowInBanner" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy1" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="BannerCategoryID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BannerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BannerCategoryOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy2" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy2" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy2" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ImageID2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerImageFoldersGet" Method="sp_BannerImageFoldersGet">
+    <Parameter Name="BannerID" Parameter="bannerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BannerCategoryID" Parameter="bannerCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerImageFoldersGetResult">
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BannerScreenShotImageFoldersGet" Method="sp_BannerScreenShotImageFoldersGet">
+    <Parameter Name="BannerScreenShotID" Parameter="bannerScreenShotID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_BannerScreenShotImageFoldersGetResult">
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageExtension" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LargeImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="MediumImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SmallImagePath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

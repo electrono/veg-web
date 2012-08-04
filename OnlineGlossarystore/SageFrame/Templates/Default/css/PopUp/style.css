@@ -1,0 +1,198 @@
+/* CSS Document */
+#trigger { text-align: center; }
+
+#fade {
+    display: none; /* Hidden as default opacity:0.7;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter:alpha(opacity=70);*/
+	
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+}
+/* Style your custom popupbox according to your requirement */
+
+.popupbox {
+    background-color: #FFF;
+    display: none;
+    float: left;
+    position: fixed;
+    top: 10%;
+    margin-top: 0 !important;
+    left: 47%;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 0px 10px#cc;
+    -moz-box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-right: 125px;
+    min-height: 160px
+}
+
+.popupbox .cssClassFormWrapper { margin: 10px 15px 0; }
+
+.popupbox2 {
+    width: 454px;
+    height: 307px;
+    background-image: url(../../images/pu_03.png);
+    background-repeat: no-repeat;
+    display: none;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 0px 10px#cc;
+    -moz-box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.popupbox3 {
+    width: 502px;
+    height: 302px;
+    background-image: url(../../images/3_03.png);
+    background-repeat: no-repeat;
+    display: none;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 0px 10px#cc;
+    -moz-box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+#intabdiv { padding: 10px; }
+
+#close img { text-decoration: none; }
+
+#close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    float: right;
+}
+
+#intabdiv2 { padding: 70px; }
+
+.popupbox h2 {
+    background-color: #3bc0fa;
+    margin: 2px;
+    font: bold 16px/16px Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#intabdiv2 p {
+    font-size: 12px;
+    color: #696868;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 20px;
+}
+
+#intabdiv3 { padding: 70px; }
+
+.popupbox .cssClassButtonWrapper {
+    float: right;
+    margin: 10px;
+}
+
+.popupbox .cssClassFormWrapper .cssClassLabel { padding: 0 10px; }
+
+.popupbox .cssClassFormWrapper input[type="text"], .popupbox .cssClassFormWrapper textarea, .popupbox .cssClassFormWrapper select {
+    -moz-box-shadow: 1px 1px 5px #C3DEF2 inset;
+    -webkit-box-shadow: 1px 1px 5px #C3DEF2 inset;
+    box-shadow: 1px 1px 5px #C3DEF2 inset;
+    padding: 3px 5px;
+    width: 250px;
+}
+
+.popupbox .cssClassFormWrapper input:focus, .cssClassFormWrapper textarea:focus {
+    -moz-box-shadow: 0 0 5px #84B3CB !important;
+    -webkit-box-shadow: 0 0 5px #84B3CB  !important;
+    box-shadow: 0 0 5px #84B3CB  !important;
+    background: #fff;
+}
+
+.popupbox .cssClassFormWrapper .cssClassTextarea {
+    width: 255px;
+    height: 110px;
+}
+
+.popupbox .cssClassFormWrapper select {
+    width: 262px;
+    margin: 3px 5px;
+}
+
+.error {
+    font: 11px Arial, Helvetica, sans-serif;
+    color: #F00;
+    padding: 0 0 0 5px;
+}
+
+.cssClassCloseIcon {
+    position: relative;
+    z-index: 9999;
+}
+
+.cssClassCloseIcon button {
+    background: none;
+    border: none;
+    outline: none;
+    text-indent: -6000px;
+    position: absolute;
+    right: -17px;
+    top: -19px;
+}
+
+button.cssClassClose {
+    background: url(../../images/close.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.cssClassReviewInfos {
+    padding: 5px;
+    background-color: #bcebff;
+    margin: 5px 0 0 0;
+}
+
+.cssClassReviewInfos a { text-decoration: underline; }
+
+.cssClassPopUpHeading { margin: 7px 0; }
+
+.cssClassWriteaReview { padding: 0 0 0 15%; }
+
+span.star-rating-control {
+    float: left;
+    width: 80px;
+    padding-bottom: 4px;
+}
+
+span.cssClassRatingText {
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+td.cssClassReviewCriteria { width: 152px; }
+
+.cssClassItemCostVariant { width: auto; }
+
+body { position: relative; }
+
+.popupbox .cssClassFormWrapper input {
+    margin: 5px;
+    padding: 4px 5px;
+}

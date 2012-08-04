@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<SageFrameMessage>
+  <AreYouSureToDelete>
+    Are you sure to delete this banner?
+  </AreYouSureToDelete>
+  <BannerDeletedSuccessfully>
+    Corporate banner is deleted successfully.
+  </BannerDeletedSuccessfully>
+  <BannerSavedSuccessfully>
+    Corporate banner is saved successfully.
+  </BannerSavedSuccessfully>
+  <BannerUpdatedSuccessfully>
+    Corporate banner is updated successfully.
+  </BannerUpdatedSuccessfully>
+  <SelectThePageFirst>
+    Please select the read more page!
+  </SelectThePageFirst>
+  <SelectBothImage>
+    Please select both the navigation and banner image!
+  </SelectBothImage>
+</SageFrameMessage>

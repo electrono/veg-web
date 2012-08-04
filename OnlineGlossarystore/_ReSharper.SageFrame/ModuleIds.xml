@@ -1,0 +1,9 @@
+<Modules>
+  <Module PersistentId="D9FFA086-318C-48C6-9DD1-43955382CDEF" ModuleId="SageFrame.Localization" />
+  <Module PersistentId="2884600D-1AC6-4A43-BEE7-9B5D43608CB4" ModuleId="SageFrame" />
+  <Module PersistentId="E01DB85D-70F0-4A32-AD9D-9D5CA1771D85" ModuleId="SageFrame.Core" />
+  <Module PersistentId="6AF77849-4E47-4E74-8944-4BDAD509C0A3" ModuleId="SageFrame.Common" />
+  <Module PersistentId="F890FA14-C1FA-40AD-971C-BADC956CF316" ModuleId="ASPXCommerce.Core" />
+  <Module PersistentId="8773EC29-792D-4EB1-BAB3-5137E34DF82C" ModuleId="SageFrame.Security" />
+  <Module PersistentId="112F669E-84E6-4124-961B-7EFE7C89852B" ModuleId="SageFrame.IPAddressToCountryResolver" />
+</Modules>

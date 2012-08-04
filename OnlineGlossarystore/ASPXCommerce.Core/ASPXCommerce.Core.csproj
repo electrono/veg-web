@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F890FA14-C1FA-40AD-971C-BADC956CF316}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASPXCommerce.Core</RootNamespace>
+    <AssemblyName>ASPXCommerce.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/ASPXCommerce.Core/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\SageFrame\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CurrencyConverter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\CurrencyConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbandonedCartInfo.cs" />
+    <Compile Include="AddressInfo.cs" />
+    <Compile Include="ASPXCommerceWCFService.cs" />
+    <Compile Include="ASPXCommerceWebService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ASPXNameValue.cs" />
+    <Compile Include="ASPXOrderDetails.cs" />
+    <Compile Include="ASPXResponce.cs" />
+    <Compile Include="ASPXUserList.cs" />
+    <Compile Include="AttributeFormInfo.cs" />
+    <Compile Include="AttributesBasicInfo.cs" />
+    <Compile Include="AttributeSetBaseInfo.cs" />
+    <Compile Include="AttributeSetGetByAttributeSetIDInfo.cs" />
+    <Compile Include="AttributeSetGroupAliasInfo.cs" />
+    <Compile Include="AttributeSetInfo.cs" />
+    <Compile Include="AttributesGetByAttributeIDInfo.cs" />
+    <Compile Include="AttributeShowInAdvanceSearchInfo.cs" />
+    <Compile Include="AttributesInputTypeInfo.cs" />
+    <Compile Include="AttributesItemTypeInfo.cs" />
+    <Compile Include="AttributeSqlProvider.cs" />
+    <Compile Include="AttributesValidationTypeInfo.cs" />
+    <Compile Include="BestSellerInfo.cs" />
+    <Compile Include="CardType.cs" />
+    <Compile Include="CardTypeInfo.cs" />
+    <Compile Include="CartInfo.cs" />
+    <Compile Include="CartManageSQLProvider.cs" />
+    <Compile Include="CartPriceRulePaging.cs" />
+    <Compile Include="CartPricingRuleAttributeInfo.cs" />
+    <Compile Include="CartPricingRuleInfo.cs" />
+    <Compile Include="CatalogPriceRulePaging.cs" />
+    <Compile Include="CatalogPricingRuleInfo.cs" />
+    <Compile Include="CategoryAttributeInfo.cs" />
+    <Compile Include="CategoryAttributes.cs" />
+    <Compile Include="CategoryController.cs" />
+    <Compile Include="CategoryDetailsInfo.cs" />
+    <Compile Include="CategoryDetailsOptionsInfo.cs" />
+    <Compile Include="CategoryHandler.cs" />
+    <Compile Include="CategoryInfo.cs" />
+    <Compile Include="CategoryItem.cs" />
+    <Compile Include="CategorySEOInfo.cs" />
+    <Compile Include="CategorySqlProvider.cs" />
+    <Compile Include="CommonInfo.cs" />
+    <Compile Include="CompareItemInfo.cs" />
+    <Compile Include="CompareItemListInfo.cs" />
+    <Compile Include="CostVariantInfo.cs" />
+    <Compile Include="CostVariants.cs" />
+    <Compile Include="CostVariantsGetByCostVariantIDInfo.cs" />
+    <Compile Include="CostVariantsvalueInfo.cs" />
+    <Compile Include="CountryInfo.cs" />
+    <Compile Include="CouponDetailFrontInfo.cs" />
+    <Compile Include="CouponInfo.cs" />
+    <Compile Include="CouponManageSQLProvider.cs" />
+    <Compile Include="CouponPerSales.cs" />
+    <Compile Include="CouponPortalUserListInfo.cs" />
+    <Compile Include="CouponSettingInfo.cs" />
+    <Compile Include="CouponSettingKeyInfo.cs" />
+    <Compile Include="CouponSettingKeyValueInfo.cs" />
+    <Compile Include="CouponStatusInfo.cs" />
+    <Compile Include="CouponTypeInfo.cs" />
+    <Compile Include="CouponUserInfo.cs" />
+    <Compile Include="CouponUserListInfo.cs" />
+    <Compile Include="CouponVerificationInfo.cs" />
+    <Compile Include="CurrencyInfo.cs" />
+    <Compile Include="CustomerDetailsInfo.cs" />
+    <Compile Include="CustomerManagementSQLProvider.cs" />
+    <Compile Include="CustomerOrderTotalInfo.cs" />
+    <Compile Include="CustomerReviewReportsInfo.cs" />
+    <Compile Include="CustomerTagInfo.cs" />
+    <Compile Include="DemoUserPortalInfo.cs" />
+    <Compile Include="DisplayItemsOptionsInfo.cs" />
+    <Compile Include="DownLoadableItemGetInfo.cs" />
+    <Compile Include="DownLoadableItemInfo.cs" />
+    <Compile Include="DownloadableItemsByCustomerInfo.cs" />
+    <Compile Include="DownloadItemAttribInfo.cs" />
+    <Compile Include="FeaturedItemsInfo.cs" />
+    <Compile Include="FileHelperController.cs" />
+    <Compile Include="FormValidation.cs" />
+    <Compile Include="GeoCoder.cs" />
+    <Compile Include="GetOrderdetailsByPaymentGatewayIDInfo.cs" />
+    <Compile Include="ImageGalleryInfo.cs" />
+    <Compile Include="ImageGalleryItemsInfo.cs" />
+    <Compile Include="ImageGallerySettingsKeys.cs" />
+    <Compile Include="ImageGallerySqlProvider.cs" />
+    <Compile Include="ImageUploaderSqlhandler.cs" />
+    <Compile Include="InventoryDetailAdminDashInfo.cs" />
+    <Compile Include="InvoiceDetailByOrderIDInfo.cs" />
+    <Compile Include="InvoiceDetailsInfo.cs" />
+    <Compile Include="ItemAttributesInfo.cs" />
+    <Compile Include="ItemAttributesManagementSqlProvider.cs" />
+    <Compile Include="ItemBasicDetailsInfo.cs" />
+    <Compile Include="ItemCostVariantInfo.cs" />
+    <Compile Include="ItemCostVariantsInfo.cs" />
+    <Compile Include="ItemQuantityDiscountInfo.cs" />
+    <Compile Include="ItemRatingAverageInfo.cs" />
+    <Compile Include="ItemRatingByUserInfo.cs" />
+    <Compile Include="ItemRatingCriteriaInfo.cs" />
+    <Compile Include="ItemReviewDetailsInfo.cs" />
+    <Compile Include="ItemReviewsInfo.cs" />
+    <Compile Include="ItemsCompareInfo.cs" />
+    <Compile Include="ItemsController.cs" />
+    <Compile Include="ItemSEOInfo.cs" />
+    <Compile Include="ItemsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemsInfoSettings.cs" />
+    <Compile Include="ItemsManagementSqlProvider.cs" />
+    <Compile Include="ItemsReviewInfo.cs" />
+    <Compile Include="ItemTagsDetailsInfo.cs" />
+    <Compile Include="ItemTagsInfo.cs" />
+    <Compile Include="ItemTypeInfo.cs" />
+    <Compile Include="LatestItemsInfo.cs" />
+    <Compile Include="LatestOrderStaticsInfo.cs" />
+    <Compile Include="LowStockItemsInfo.cs" />
+    <Compile Include="MostViewedItemsInfo.cs" />
+    <Compile Include="MostViewItemInfoAdminDash.cs" />
+    <Compile Include="MyOrderListInfo.cs" />
+    <Compile Include="NewAccountReportInfo.cs" />
+    <Compile Include="OnLineUserBaseInfo.cs" />
+    <Compile Include="OnlineUserInfo.cs" />
+    <Compile Include="OrderChartInfo.cs" />
+    <Compile Include="OrderDetailsByOrderIDInfo.cs" />
+    <Compile Include="OrderDetailsCollection.cs" />
+    <Compile Include="OrderDetailsInfo.cs" />
+    <Compile Include="OrderItemInfo.cs" />
+    <Compile Include="OrderItemsGroupByItemIDInfo.cs" />
+    <Compile Include="OrderItemsInfo.cs" />
+    <Compile Include="OrderStatusListInfo.cs" />
+    <Compile Include="PaymentGateway.cs" />
+    <Compile Include="PaymentGateWayInfo.cs" />
+    <Compile Include="PaymentGatewayInstaller.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentGatewayListInfo.cs" />
+    <Compile Include="PaymentGateWayModuleInfo.cs" />
+    <Compile Include="PaymentInfo.cs" />
+    <Compile Include="PopularTagsInfo.cs" />
+    <Compile Include="PortalInfo.cs" />
+    <Compile Include="PortalRole.cs" />
+    <Compile Include="PortalUserListInfo.cs" />
+    <Compile Include="PriceRuleController.cs" />
+    <Compile Include="PriceRuleSqlProvider.cs" />
+    <Compile Include="PricingRuleAttributeInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingCriteriaInfo.cs" />
+    <Compile Include="RatingLatestInfo.cs" />
+    <Compile Include="RecentlyViewedItemsInfo.cs" />
+    <Compile Include="ReferToFriendInfo.cs" />
+    <Compile Include="ReferToFriendSqlHandler.cs" />
+    <Compile Include="ReturnActionList.cs" />
+    <Compile Include="ReturnReasonList.cs" />
+    <Compile Include="ReturnRequestAction.cs" />
+    <Compile Include="ReturnRequestList.cs" />
+    <Compile Include="ReturnRequestsReason.cs" />
+    <Compile Include="ReturnRequestStatus.cs" />
+    <Compile Include="ReturnStatusList.cs" />
+    <Compile Include="SearchTermInfo.cs" />
+    <Compile Include="SearchTermList.cs" />
+    <Compile Include="SearchTermSQLProvider.cs" />
+    <Compile Include="SecurePageInfo.cs" />
+    <Compile Include="ShareWishListItemInfo.cs" />
+    <Compile Include="ShipmentsDetailsInfo.cs" />
+    <Compile Include="ShipmentsDetailsViewInfo.cs" />
+    <Compile Include="ShippedReportInfo.cs" />
+    <Compile Include="ShippingCostDependencyInfo.cs" />
+    <Compile Include="ShippingCostInfo.cs" />
+    <Compile Include="ShippingItemDependenciesInfo.cs" />
+    <Compile Include="ShippingMethodInfo.cs" />
+    <Compile Include="ShippingMethodSqlProvider.cs" />
+    <Compile Include="ShippingProviderListInfo.cs" />
+    <Compile Include="ShippingProviderNameListInfo.cs" />
+    <Compile Include="ShippingWeightDependenciesInfo.cs" />
+    <Compile Include="ShoppingCartInfo.cs" />
+    <Compile Include="ShoppingOptionsInfo.cs" />
+    <Compile Include="ShowCustomerTagsListInfo.cs" />
+    <Compile Include="ShowItemTagsListInfo.cs" />
+    <Compile Include="ShowpopulartagsDetailsInfo.cs" />
+    <Compile Include="SortOptionTypeInfo.cs" />
+    <Compile Include="SpecialItemsInfo.cs" />
+    <Compile Include="StateInfo.cs" />
+    <Compile Include="StaticOrderStatusAdminDashInfo.cs" />
+    <Compile Include="StatusInfo.cs" />
+    <Compile Include="StoreAccessAutocomplete.cs" />
+    <Compile Include="StoreAccessDetailsInfo.cs" />
+    <Compile Include="StoreAccessInfo.cs" />
+    <Compile Include="StoreAccessKey.cs" />
+    <Compile Include="StoreAccessResultInfo.cs" />
+    <Compile Include="StoreInfo.cs" />
+    <Compile Include="StoreLocatorInfo.cs" />
+    <Compile Include="StoreSetting.cs" />
+    <Compile Include="StoreSettingInfo.cs" />
+    <Compile Include="StoreSqlProvider.cs" />
+    <Compile Include="StoreTaxesInfo.cs" />
+    <Compile Include="TagDetailsInfo.cs" />
+    <Compile Include="TaxCustomerClassInfo.cs" />
+    <Compile Include="TaxItemClassInfo.cs" />
+    <Compile Include="TaxManageRulesInfo.cs" />
+    <Compile Include="TaxRateInfo.cs" />
+    <Compile Include="TaxRulesInfo.cs" />
+    <Compile Include="TopCustomerOrdererInfo.cs" />
+    <Compile Include="TotalOrderAmountInfo.cs" />
+    <Compile Include="TransactionType.cs" />
+    <Compile Include="userAddressInfo.cs" />
+    <Compile Include="UserDashboardSQLProvider.cs" />
+    <Compile Include="UserInRoleInfo.cs" />
+    <Compile Include="UserListInfo.cs" />
+    <Compile Include="UserProductReviewInfo.cs" />
+    <Compile Include="UserRatingInformationInfo.cs" />
+    <Compile Include="UserRecentHistoryInfo.cs" />
+    <Compile Include="WcfSession.cs" />
+    <Compile Include="WishItemsInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SageFrame.Common\SageFrame.Common.csproj">
+      <Project>{6AF77849-4E47-4E74-8944-4BDAD509C0A3}</Project>
+      <Name>SageFrame.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SageFrame.Core\SageFrame.Core.csproj">
+      <Project>{E01DB85D-70F0-4A32-AD9D-9D5CA1771D85}</Project>
+      <Name>SageFrame.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SageFrame.Security\SageFrame.Security.csproj">
+      <Project>{8773EC29-792D-4EB1-BAB3-5137E34DF82C}</Project>
+      <Name>SageFrame.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

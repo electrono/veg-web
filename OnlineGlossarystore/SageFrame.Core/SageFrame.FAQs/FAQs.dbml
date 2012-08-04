@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SageFrameWebSite" Class="FAQsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.3.26;Initial Catalog=SageFrame;Persist Security Info=True;User ID=sa" SettingsObjectName="SageFrame.FAQs.Properties.Settings" SettingsPropertyName="SageFrameConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_FAQGetByPortalAndUserModule" Method="sp_FAQGetByPortalAndUserModule">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_FAQGetByPortalAndUserModuleResult">
+      <Column Name="FAQID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserModuleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Question" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Answer" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FAQCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ViewCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_FAQsCategoryAdd" Method="sp_FAQsCategoryAdd">
+    <Parameter Name="FAQCategoryID" Parameter="fAQCategoryID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FAQCategoryName" Parameter="fAQCategoryName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="FAQCategoryDescription" Parameter="fAQCategoryDescription" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="AddedOn" Parameter="addedOn" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FAQsCategoryGetByFAQCategoryID" Method="sp_FAQsCategoryGetByFAQCategoryID">
+    <Parameter Name="FAQCategoryID" Parameter="fAQCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_FAQsCategoryGetByFAQCategoryIDResult">
+      <Column Name="FAQCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserModuleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FAQCategoryName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FAQCategoryDescription" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_FAQsCategoryDelete" Method="sp_FAQsCategoryDelete">
+    <Parameter Name="FAQCategoryID" Parameter="fAQCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DeletedBy" Parameter="deletedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FAQsCategoryUpdate" Method="sp_FAQsCategoryUpdate">
+    <Parameter Name="FAQCategoryID" Parameter="fAQCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FAQCategoryName" Parameter="fAQCategoryName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="FAQCategoryDescription" Parameter="fAQCategoryDescription" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsModified" Parameter="isModified" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UpdatedOn" Parameter="updatedOn" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UpdatedBy" Parameter="updatedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FAQsCheckUniqueFAQsCategoryName" Method="sp_FAQsCheckUniqueFAQsCategoryName">
+    <Parameter Name="FAQCategoryID" Parameter="fAQCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FAQCategoryName" Parameter="fAQCategoryName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="isEdit" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="categoryCount" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FAQsAdd" Method="sp_FAQsAdd">
+    <Parameter Name="FAQID" Parameter="fAQID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Question" Parameter="question" Type="System.String" DbType="NText" />
+    <Parameter Name="Answer" Parameter="answer" Type="System.String" DbType="NText" />
+    <Parameter Name="FAQCategoryID" Parameter="fAQCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ViewCount" Parameter="viewCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="AddedOn" Parameter="addedOn" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_CheckUserModulePermissionByPermissionKey" Method="sp_CheckUserModulePermissionByPermissionKey">
+    <Parameter Name="PermissionKey" Parameter="permissionKey" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FAQGetByFAQID" Method="sp_FAQGetByFAQID">
+    <Parameter Name="FAQID" Parameter="fAQID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_FAQGetByFAQIDResult">
+      <Column Name="FAQID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserModuleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Question" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Answer" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FAQCategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ViewCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_FAQsDelete" Method="sp_FAQsDelete">
+    <Parameter Name="FAQID" Parameter="fAQID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DeletedBy" Parameter="deletedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FAQsUpdate" Method="sp_FAQsUpdate">
+    <Parameter Name="FAQID" Parameter="fAQID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Question" Parameter="question" Type="System.String" DbType="NText" />
+    <Parameter Name="Answer" Parameter="answer" Type="System.String" DbType="NText" />
+    <Parameter Name="FAQCategoryID" Parameter="fAQCategoryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsModified" Parameter="isModified" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UpdatedOn" Parameter="updatedOn" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UpdatedBy" Parameter="updatedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_UserModuleSettingsGetByUserModuleAndSettingName" Method="sp_UserModuleSettingsGetByUserModuleAndSettingName">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SettingName" Parameter="settingName" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="sp_UserModuleSettingsGetByUserModuleAndSettingNameResult">
+      <Column Name="UserModuleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SettingName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SettingValue" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_FAQsSettingAddUpdate" Method="sp_FAQsSettingAddUpdate">
+    <Parameter Name="FAQsSettingValueID" Parameter="fAQsSettingValueID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SettingKey" Parameter="settingKey" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="SettingValue" Parameter="settingValue" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UpdatedBy" Parameter="updatedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Parameter Name="AddedBy" Parameter="addedBy" Type="System.String" DbType="NVarChar(256)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FAQsSettingGetAll" Method="sp_FAQsSettingGetAll">
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_FAQsSettingGetAllResult">
+      <Column Name="FAQsSettingValueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserModuleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SettingKey" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="SettingValue" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_FAQsViewCountUpdate" Method="sp_FAQsViewCountUpdate">
+    <Parameter Name="FAQID" Parameter="fAQID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsModified" Parameter="isModified" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_FAQsViewCountUpdateResult">
+      <Column Name="ViewCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_GetFAQWithTemplate" Method="sp_GetFAQWithTemplate">
+    <Parameter Name="UserModuleID" Parameter="userModuleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="CategoryActive" Parameter="categoryActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="NVarChar(256)" />
+    <ElementType Name="sp_GetFAQWithTemplateResult">
+      <Column Name="[INDEX]" Member="INDEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FAQID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QUESTION" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="ANSWER" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="[USER]" Member="USER" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="VIEWCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CATEGORYNAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CATEGORYDESC" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DATECREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DATEMODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Org_Question" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Org_Answer" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_FAQsCategoryGetByPortal" Method="sp_FAQsCategoryGetByPortal">
+    <Parameter Name="PortalID" Parameter="portalID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_FAQsCategoryGetByPortalResult">
+      <Column Name="FAQCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserModuleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FAQCategoryName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FAQCategoryDescription" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsModified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

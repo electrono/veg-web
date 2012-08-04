@@ -1,0 +1,140 @@
+#facebox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: left;
+}
+
+#facebox .popup { position: relative;
+    /*border:1px solid #fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;*/ }
+
+#facebox .content { /*display:table;
+	width: 370px;
+	padding: 10px;
+	background: #fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:2px solid #2CA3D2;*/ }
+
+#facebox .content > p:first-child { margin-top: 0; }
+
+#facebox .content > p:last-child { margin-bottom: 0; }
+
+#facebox .close {
+    position: absolute;
+    top: -38px;
+    right: -15px;
+    padding: 2px;
+}
+
+#facebox .close img { }
+
+#facebox .close:hover img { }
+
+#facebox .loading { text-align: center; }
+
+#facebox .image { text-align: center; }
+
+#facebox img {
+    border: 0;
+    margin: 0;
+}
+
+#facebox_overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.facebox_hide { z-index: -100; }
+
+.facebox_overlayBG {
+    background-color: #000;
+    z-index: 99;
+}
+
+#facebox .content iframe table { border: 2px solid #000 !important; }
+
+#facebox .content input.cssClassPopUpBtn {
+    background-color: #737373;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    padding: 2px 5px !important;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 10px 0 0 5px;
+}
+
+#facebox .content input.cssClassPopUpBtn:hover { background-color: #858585; }
+
+#facebox .content span.cssClassFormLabel {
+    color: #404040;
+    font: bold 11px/20px Arial, Helvetica, sans-serif;
+    padding: 0 0 0 0;
+}
+
+#facebox .content textarea {
+    background-color: #fff !important;
+    border-color: #D0CBBE #E5E1D6 #E5E1D6 #D0CBBE;
+    border-width: 1px;
+    border-style: solid;
+    color: #404040;
+    font: 11px/18px Arial, Helvetica, sans-serif;
+    margin: 0;
+    outline: none;
+    padding: 0 0 2px 2px;
+    width: 490px;
+}
+
+#facebox .content select {
+    background-color: #fff !important;
+    border-color: #D0CBBE #E5E1D6 #E5E1D6 #D0CBBE;
+    border-width: 1px;
+    border-style: solid;
+    color: #404040;
+    font: 11px/18px Arial, Helvetica, sans-serif;
+    margin: 5px 0 0 0;
+    outline: none;
+    padding: 0 0 2px 2px;
+    width: 208px;
+}
+
+td.cssClassTranslate { width: 65px; }
+
+td.cssClassTranslate span {
+    margin: 2px 5px 0 0;
+    padding: 0 3px;
+    font: bold 11px/20px Arial, Helvetica, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    background-color: #2CA3D2;
+    display: block;
+    float: left;
+}
+
+#facebox {
+    background: url(../images/popup-top-bg.png) left top no-repeat;
+    padding: 19px 0 0 0;
+    width: 541px;
+}
+
+#facebox .popup {
+    background: url(../images/popup-btn-bg.png) left bottom no-repeat;
+    padding: 0 0 19px 0;
+}
+
+#facebox .popup .content {
+    background: url(../images/popup-mid-bg.png) repeat-y;
+    padding: 0 18px 10px;
+}

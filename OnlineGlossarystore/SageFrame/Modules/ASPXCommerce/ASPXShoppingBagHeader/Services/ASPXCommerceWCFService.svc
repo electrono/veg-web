@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ASPXCommerceWCFService" CodeBehind="~/App_Code/ASPXCommerceWCFService.cs" %>

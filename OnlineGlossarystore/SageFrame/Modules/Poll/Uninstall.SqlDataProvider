@@ -1,0 +1,169 @@
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollAddandUpdate]    Script Date: 01/18/2011 15:49:28 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollAddandUpdate]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollAddandUpdate]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollAnserGet]    Script Date: 01/18/2011 15:49:28 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollAnserGet]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollAnserGet]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollAnswerDeletebyPollQuestionID]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollAnswerDeletebyPollQuestionID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollAnswerDeletebyPollQuestionID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollAnswerList]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollAnswerList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollAnswerList]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollCheckByUsername]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollCheckByUsername]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollCheckByUsername]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollCheckQuestion]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollCheckQuestion]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollCheckQuestion]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollCheckQuestionList]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollCheckQuestionList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollCheckQuestionList]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollCheckUsername]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollCheckUsername]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollCheckUsername]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollCheckUsernameAsVotedBy]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollCheckUsernameAsVotedBy]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollCheckUsernameAsVotedBy]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollColorList]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollColorList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollColorList]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollDeletebyPollQuestionID]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollDeletebyPollQuestionID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollDeletebyPollQuestionID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollOptionAdd]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollOptionAdd]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollOptionAdd]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollOptionAddUpdateByID]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollOptionAddUpdateByID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollOptionAddUpdateByID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollOptionDeletebyPollOptionD]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollOptionDeletebyPollOptionD]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollOptionDeletebyPollOptionD]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollOptionUpdateByPollID]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollOptionUpdateByPollID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollOptionUpdateByPollID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollOptionUpdateOnly]    Script Date: 01/18/2011 15:49:29 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollOptionUpdateOnly]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollOptionUpdateOnly]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionAdd]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionAdd]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionAdd]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionAddUpdateByID]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionAddUpdateByID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionAddUpdateByID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionAnswerAdd]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionAnswerAdd]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionAnswerAdd]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionGet]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionGet]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionGet]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionGetAll]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionGetAll]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionGetAll]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionGetPollQuestionID]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionGetPollQuestionID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionGetPollQuestionID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionUpdateByPollID]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionUpdateByPollID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionUpdateByPollID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollQuestionUpdateOnly]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollQuestionUpdateOnly]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollQuestionUpdateOnly]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollReportByPollQuestionID]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollReportByPollQuestionID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollReportByPollQuestionID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollResultAdd]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollResultAdd]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollResultAdd]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollResultCount]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollResultCount]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollResultCount]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollResultList]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollResultList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollResultList]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollSettingByValueSettingList]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollSettingByValueSettingList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollSettingByValueSettingList]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollSettingGetAll]    Script Date: 01/18/2011 15:49:30 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollSettingGetAll]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollSettingGetAll]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollSettingGetAllColor]    Script Date: 01/18/2011 15:49:31 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollSettingGetAllColor]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollSettingGetAllColor]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollSettingUpdate]    Script Date: 01/18/2011 15:49:31 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollSettingUpdate]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollSettingUpdate]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollSettingValueGetByPollSettingID]    Script Date: 01/18/2011 15:49:31 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollSettingValueGetByPollSettingID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollSettingValueGetByPollSettingID]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollTotalCount]    Script Date: 01/18/2011 15:49:31 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollTotalCount]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollTotalCount]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollView]    Script Date: 01/18/2011 15:49:31 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollView]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollView]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollVoteControl]    Script Date: 01/18/2011 15:49:31 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollVoteControl]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollVoteControl]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_PollVotesUpdate]    Script Date: 01/18/2011 15:49:31 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_PollVotesUpdate]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[sp_PollVotesUpdate]
+
+GO
+/****** Object:  Table [dbo].[PollOption]    Script Date: 01/18/2011 15:49:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PollOption]') AND type in (N'U'))
+DROP TABLE [dbo].[PollOption]
+GO
+/****** Object:  Table [dbo].[PollQuestion]    Script Date: 01/18/2011 15:49:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PollQuestion]') AND type in (N'U'))
+DROP TABLE [dbo].[PollQuestion]
+GO
+/****** Object:  Table [dbo].[PollResult]    Script Date: 01/18/2011 15:49:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PollResult]') AND type in (N'U'))
+DROP TABLE [dbo].[PollResult]
+GO
+/****** Object:  Table [dbo].[PollSettingByKey]    Script Date: 01/18/2011 15:49:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PollSettingByKey]') AND type in (N'U'))
+DROP TABLE [dbo].[PollSettingByKey]
+GO
+/****** Object:  Table [dbo].[PollSettingByValue]    Script Date: 01/18/2011 15:49:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PollSettingByValue]') AND type in (N'U'))
+DROP TABLE [dbo].[PollSettingByValue]

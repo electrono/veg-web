@@ -1,0 +1,63 @@
+#Pagination {
+    float: right;
+    margin-top: 15px;
+}
+
+.cssClassPagination { }
+
+.cssClassPagination a {
+    border: solid 1px #2ca3d2;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    color: 000;
+    text-decoration: none;
+}
+
+.cssClassPagination a:hover {
+    background: #2ca3d2;
+    color: #fff;
+}
+
+
+
+
+.cssClassPagination a, .cssClassPagination span {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 1em;
+    text-align: center;
+    padding: 2px 3px;
+}
+
+.cssClassPagination .cssClassCurrent {
+    background: #2ca3d2;
+    color: #fff;
+    border: solid 1px #2ca3d2;
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 1em;
+    text-align: center;
+    padding: 2px 3px;
+}
+
+.cssClassPagination .cssClassCurrent.cssClassPrev, .cssClassPagination .cssClassCurrent.cssClassNext {
+    color: #000;
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 1em;
+    text-align: center;
+    padding: 2px 3px;
+    background: none;
+    border: none;
+    border: solid 1px #2ca3d2;
+}
+
+a.cssClassPrev, a.cssClassNext { font: bold 11px Arial, Helvetica, sans-serif; }
+
+span.cssClassPrev, span.cssClassNext {
+    color: #999 !important;
+    border: none !important;
+}

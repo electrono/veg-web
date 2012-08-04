@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="chkAttachmentResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAttachmentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkCompanyResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkCompanyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkFormInfoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkFormInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkFormTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkFormTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkMessageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkMobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPAddResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPCityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPCountryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPhone1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPhone1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPhone2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPhone2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPPCResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPPCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPStateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPZCResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPZCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTAddResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTCityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTCountryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTPCResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTPCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTStateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTZCResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTZCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkWebsiteResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkWebsiteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imbSaveContactUsSettingResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imbSaveContactUsSettingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imbSaveEmailSettingResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imbSaveEmailSettingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Form Title</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>Form Information</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>Field Title</value>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Display Order</value>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>IsActive</value>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAttachmentResource1.Text" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="lblAttachmentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCompanyResource1.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="lblCompanyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactUsMailSettingHelpResource1.Text" xml:space="preserve">
+    <value>In this section, you can set up the ContactUs Mail Setting for the FeedBack Module</value>
+  </data>
+  <data name="lblContactUsMailSettingHelpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactUsSettingsHelpResource1.Text" xml:space="preserve">
+    <value>In this section, you can set up the ContactUs Settings for the FeedBack Module</value>
+  </data>
+  <data name="lblContactUsSettingsHelpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmail1Resource1.Text" xml:space="preserve">
+    <value>Email1</value>
+  </data>
+  <data name="lblEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmail2Resource1.Text" xml:space="preserve">
+    <value>Email2</value>
+  </data>
+  <data name="lblEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.Text" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="lblMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMobileResource1.Text" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="lblMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParmanentAddressResource1.Text" xml:space="preserve">
+    <value>Permanent Address</value>
+  </data>
+  <data name="lblParmanentAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParmanentPostalCodeResource1.Text" xml:space="preserve">
+    <value>Permanent PostalCode</value>
+  </data>
+  <data name="lblParmanentPostalCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParmanentStateResource1.Text" xml:space="preserve">
+    <value>Permanent State</value>
+  </data>
+  <data name="lblParmanentStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParmanentZipCodeResource1.Text" xml:space="preserve">
+    <value>Permanent ZipCode</value>
+  </data>
+  <data name="lblParmanentZipCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPermanentCityResource1.Text" xml:space="preserve">
+    <value>Permanent City</value>
+  </data>
+  <data name="lblPermanentCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPermanentCountryResource1.Text" xml:space="preserve">
+    <value>Permanent Country</value>
+  </data>
+  <data name="lblPermanentCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPhone1Resource1.Text" xml:space="preserve">
+    <value>Phone1</value>
+  </data>
+  <data name="lblPhone1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPhone2Resource1.Text" xml:space="preserve">
+    <value>Phone2</value>
+  </data>
+  <data name="lblPhone2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveContactUsSettingResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="lblSaveContactUsSettingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveEmailSettingResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="lblSaveEmailSettingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemporaryAddressResource1.Text" xml:space="preserve">
+    <value>Temporary Address</value>
+  </data>
+  <data name="lblTemporaryAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemporaryCityResource1.Text" xml:space="preserve">
+    <value>Temporary City</value>
+  </data>
+  <data name="lblTemporaryCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemporaryCountryResource1.Text" xml:space="preserve">
+    <value>Temporary Country</value>
+  </data>
+  <data name="lblTemporaryCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemporaryPostalCodeResource1.Text" xml:space="preserve">
+    <value>Temporary PostalCode</value>
+  </data>
+  <data name="lblTemporaryPostalCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemporaryStateResource1.Text" xml:space="preserve">
+    <value>Temporary State</value>
+  </data>
+  <data name="lblTemporaryStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemporaryZipCodeResource1.Text" xml:space="preserve">
+    <value>Temporary ZipCode</value>
+  </data>
+  <data name="lblTemporaryZipCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWebsiteResource1.Text" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="lblWebsiteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Send Mail</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Save Only</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Both Save and Send</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rblFeedBackSettingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TabContainerFeedBackSettingsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TabPanelContactUsMailSettingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TabPanelContactUsSettingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAttachment1Resource1.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="txtAttachment1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAttachmentResource1.Text" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="txtAttachmentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCompany1Resource1.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txtCompany1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCompanyResource1.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="txtCompanyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail11Resource1.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txtEmail11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail1Resource1.Text" xml:space="preserve">
+    <value>Email1</value>
+  </data>
+  <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail2Resource1.Text" xml:space="preserve">
+    <value>Email2</value>
+  </data>
+  <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmaill2Resource1.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtEmaill2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFormInfoResource1.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtFormInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFormInformationResource1.Text" xml:space="preserve">
+    <value>Form Information</value>
+  </data>
+  <data name="txtFormInformationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFormTitle1Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtFormTitle1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFormTitleResource1.Text" xml:space="preserve">
+    <value>Form Title</value>
+  </data>
+  <data name="txtFormTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMessage1Resource1.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="txtMessage1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMessageResource1.Text" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="txtMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobile1Resource1.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="txtMobile1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileResource1.Text" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="txtMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtName1Resource1.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtName1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNameResource1.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="txtNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentAddResource1.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtPermanentAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentAddressResource1.Text" xml:space="preserve">
+    <value>Permanent Address</value>
+  </data>
+  <data name="txtPermanentAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentCity1Resource1.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtPermanentCity1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentCityResource1.Text" xml:space="preserve">
+    <value>Permanent City</value>
+  </data>
+  <data name="txtPermanentCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentCountry1Resource1.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtPermanentCountry1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentCountryResource1.Text" xml:space="preserve">
+    <value>Permanent Country</value>
+  </data>
+  <data name="txtPermanentCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentPostalCode1Resource1.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtPermanentPostalCode1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentPostCodeResource1.Text" xml:space="preserve">
+    <value>Permanent PostalCode</value>
+  </data>
+  <data name="txtPermanentPostCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentState1Resource1.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtPermanentState1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentStateResource1.Text" xml:space="preserve">
+    <value>Permanent State</value>
+  </data>
+  <data name="txtPermanentStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentZipCode1Resource1.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtPermanentZipCode1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermanentZipCodeResource1.Text" xml:space="preserve">
+    <value>Permanent ZipCode</value>
+  </data>
+  <data name="txtPermanentZipCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhone1Resource1.Text" xml:space="preserve">
+    <value>Phone1</value>
+  </data>
+  <data name="txtPhone1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhone2Resource1.Text" xml:space="preserve">
+    <value>Phone2</value>
+  </data>
+  <data name="txtPhone2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhonee1Resource1.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txtPhonee1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhonee2Resource1.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="txtPhonee2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryAddResource1.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txtTemporaryAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryAddressResource1.Text" xml:space="preserve">
+    <value>Temporary Address</value>
+  </data>
+  <data name="txtTemporaryAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryCity1Resource1.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txtTemporaryCity1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryCityResource1.Text" xml:space="preserve">
+    <value>Temporary City</value>
+  </data>
+  <data name="txtTemporaryCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryCountry1Resource1.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtTemporaryCountry1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryCountryResource1.Text" xml:space="preserve">
+    <value>Temporary Country</value>
+  </data>
+  <data name="txtTemporaryCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryPostalCode1Resource1.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txtTemporaryPostalCode1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryPostalCodeResource1.Text" xml:space="preserve">
+    <value>Temporary Postal Code</value>
+  </data>
+  <data name="txtTemporaryPostalCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryState1Resource1.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtTemporaryState1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryStateResource1.Text" xml:space="preserve">
+    <value>Temporary State</value>
+  </data>
+  <data name="txtTemporaryStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryZipCode1Resource1.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txtTemporaryZipCode1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemporaryZipCodeResource1.Text" xml:space="preserve">
+    <value>Temporary ZipCode</value>
+  </data>
+  <data name="txtTemporaryZipCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebsite1Resource1.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txtWebsite1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebsiteResource1.Text" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="txtWebsiteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

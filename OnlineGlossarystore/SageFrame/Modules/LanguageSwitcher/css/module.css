@@ -1,0 +1,408 @@
+﻿/*============localizerswtichsettings styles=======*/
+#divPreview { overflow: hidden; }
+
+#divPreview ul.defaultButtonClass li { overflow: hidden; }
+
+#divPreview ul.defaultButtonClass li img {
+    float: left;
+    margin: 0 3px;
+}
+
+#divPreview ul.defaultButtonClass li span {
+    float: left;
+    padding: 0 8px;
+    color: #000;
+}
+
+.spanPreview {
+    font-weight: bold;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.cssClassFormWrapper #divPreviewHeader h2 {
+    background: none !important;
+    text-shadow: 1px 1px 0 #fff;
+    font: bold 16px/20px Arial, Helvetica, sans-serif !important;
+    color: #069;
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 0;
+    background-color: none !important;
+    height: 20px;
+    border-top: 1px solid #fff;
+}
+
+.cssClassFlagButtonWrapper { /*	height:15px;*/padding: 2px; /*width:270px;*/ }
+
+.FlagButtonWrapper li {
+    padding: 3px;
+    overflow: hidden;
+}
+
+.FlagButtonWrapper li span { float: left; }
+
+.FlagButtonWrapper li img { float: left; }
+
+.defaultButtonClass li { list-style-type: none !important; /*background-color:#e7e3e0;
+	border:1px solid #c16a3b;
+	padding:2px 5px;
+	float:left;
+	cursor:pointer;
+	width:150px;
+	margin:2px 5px 0 0;*/ }
+
+.defaultButtonClass li.cssClassFlagButtonHor {
+    float: left;
+    width: 150px;
+}
+
+#divPreview .defaultButtonClass li {
+    width: auto;
+    float: left;
+}
+
+.cssClassListItemStyleHor {
+    list-style-type: none !important;
+    /*margin-left:2px;
+	min-width:25px;
+	max-width:40px;
+	min-height:10px;
+	background-color:#e7e3e0;
+	padding:2px;
+	border:1px solid #c16a3b;*/
+    float: left;
+    cursor: pointer;
+}
+
+.cssClassListItemStyleHor img {
+    float: left;
+    margin: 0 5px;
+}
+
+.cssClassListItemStyleHor span {
+    float: left;
+    padding: 0 5px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.cssClassListItemStyleVer {
+    list-style-type: none !important;
+    /*margin-left:2px;
+	min-width:25px;
+	min-height:10px;
+	background-color:#e7e3e0;
+	padding:2px;
+	border:1px solid #c16a3b;
+	margin-top:2px;
+	max-width:40px;
+	cursor:pointer;*/
+    background-color: #fff;
+    padding: 2px;
+    border: 1px solid #c16a3b;
+    float: none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #FFF5E1;
+    border: 1px solid #DFC388;
+    margin: 2px 0 0 0;
+}
+
+.cssClassFlagButtonHor { list-style-type: none !important; /*margin-left:2px;
+	min-width:25px;
+	max-width:40px;
+	min-height:10px;
+	background-color:#e7e3e0;
+	padding:2px;
+	border:1px solid #c16a3b;
+	float:left;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color:#FFF5E1;
+	border:1px solid #DFC388;*/ }
+
+.cssClassFlagButtonHor span {
+    font: 11px Arial, Helvetica, sans-serif;
+    padding: 0 5px;
+}
+
+li.cssClassFlagButtonVer {
+    list-style-type: none !important;
+    float: left;
+    width: 150px;
+    margin: 2px 0 0 0;
+    cursor: pointer; /*padding:2px 0;	margin-left:2px;
+	min-width:25px;
+	min-height:10px;
+	background-color:#e7e3e0;
+	padding:2px;
+	border:1px solid #c16a3b;
+	margin-top:2px;
+	max-width:40px;
+	cursor:pointer;*/
+}
+
+.cssClassFlagButtonVer img { float: left; }
+
+.cssClassFlagButtonVer span {
+    float: left;
+    font: 11px/10px Arial, Helvetica, sans-serif;
+    padding: 0 5px;
+}
+
+.cssClassFlagButton { }
+
+#ddlFlags { width: 200px; }
+
+#divCssStyleHeader {
+    width: 444px;
+    height: 20px;
+    padding: 2px;
+    background-color: #c0c0c0;
+    margin-top: 2px;
+}
+
+#divCssStyleHeader span.wrapper { font-weight: bold; }
+
+#divCssStyleHeader span.item {
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+#typeSelect { float: left; }
+
+#typeSelect li {
+    list-style-type: none;
+    float: left;
+    margin-left: 2px;
+}
+
+#divListSubSetting { /*	height:25px;
+	padding:3px;
+	width:200px;
+	float:left;
+	text-align:center;*/ }
+
+#divDropDownSubSetting { /*border:1px solid #000;
+	height:25px;
+	padding:3px;
+	width:400px;
+	float:left;
+	text-align:center;*/ }
+
+.cssClassDropDownSubSetting {
+    float: left;
+    border-right: 2px solid #5F9DB5;
+    padding: 0 0 0 15px;
+}
+
+.cssClassDropDownSubSetting input {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.cssClassDropDownSubSetting span {
+    color: #000000;
+    float: left;
+    font: 11px/13px Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 10px 0 5px;
+}
+
+.cssClassDropDownFlag select {
+    width: 200px;
+    margin: 5px 0 0 0;
+}
+
+#divFlagAlignment { /*height:25px;
+	padding:3px;
+	width:200px;
+	float:left;
+	text-align:center;*/ }
+/*------------------style for switch button----------------*/
+
+.FlagButtonWrapper {
+    /*	height:15px;*/
+    padding: 2px;
+    min-width: 150px;
+    overflow: hidden;
+}
+
+.cssClassSelectedFlag { /*background-color:Red !important;*/ }
+
+.tooltip {
+    display: none;
+    background-color: #FFF5E1;
+    border: 1px solid #FFFFFF;
+    font-size: 12px;
+    min-width: 140px;
+    color: #000;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 5px 5px #666666;
+    z-index: 100;
+    text-align: center;
+    font: bold 11px/18px Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassRadioBtnWrapper {
+    border-right: 2px solid #5F9DB5;
+    float: left;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassRadioBtnWrapper input {
+    margin-right: 4px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassRadioBtnWrapper span {
+    float: left;
+    font: 11px/13px Arial, Helvetica, sans-serif;
+    padding: 0 10px 0 5px;
+    color: #000;
+    margin: 0;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassCheckBoxWrapper {
+    margin: 0;
+    padding: 0 0 0 15px;
+    float: left;
+    border-right: 2px solid #5F9DB5;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassCheckBoxWrapper input {
+    margin-right: 4px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassCheckBoxWrapper span {
+    float: left;
+    font: 11px/14px Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    color: #000;
+    margin: 0;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassFlagAlignment {
+    margin: 0;
+    padding: 0 0 0 15px;
+    float: left;
+    border-right: 2px solid #5F9DB5;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassFlagAlignment input {
+    margin-right: 4px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassFlagAlignment span {
+    float: left;
+    font: 11px/14px Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    color: #000;
+    margin: 0;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassShowCarousel {
+    margin: 0;
+    padding: 0 0 0 15px;
+    float: left;
+    border-right: 2px solid #5F9DB5;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassShowCarousel input {
+    margin-right: 4px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.cssClassLocalizerSwitchSetting .cssClassShowCarousel span {
+    float: left;
+    font: 11px/14px Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    color: #000;
+    margin: 0;
+}
+
+.cssClassButtonWrapper .cssClassBtn {
+    background-color: #2ca3d2;
+    padding: 2px 8px !important;
+    font: normal 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.cssClassButtonWrapper .cssClassBtn:hover { background-color: #57c8f4; }
+
+#divPreview .cssClassListItemStyleVer {
+    list-style-type: none !important;
+    background-color: none;
+    padding: 2px;
+    border: none;
+    float: none;
+    cursor: pointer;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin: 2px 0 0 0;
+    overflow: hidden;
+    background: none;
+}
+
+#divPreview .cssClassListItemStyleVer li { overflow: hidden; }
+
+#divPreview .cssClassListItemStyleVer img {
+    float: left;
+    margin: 0 5px;
+}
+
+#divPreview .cssClassListItemStyleVer span {
+    float: left;
+    padding: 0 5px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+li.cssClassSelectedFlag, li.cssClassSelectedFlag span { /*background-color:#fff;
+	border:1px solid #cda04a;*/font: bold 11px/10px Arial, Helvetica, sans-serif; }
+
+li.flag { /*display:block;
+	width:20px;*/margin: 0; }
+
+li.cssClassLanguageFlag { float: left; }
+
+li.cssClassSelectedFlag { background-color: #fff; }
+
+li.cssClassLanguageName {
+    float: left;
+    width: 220px;
+}
+
+li.cssClassLanguageFlagVer { width: 18px; }
+
+div.FlagButtonWrapper li { cursor: pointer; }
+
+div.FlagButtonWrapper li:hover { background-color: #fff; }

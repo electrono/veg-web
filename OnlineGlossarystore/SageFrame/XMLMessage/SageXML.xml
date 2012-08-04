@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<SageFrameMessage>
+  <UserManagement>
+    <RoleSavedSuccessfully>
+      Role saved successfully!
+    </RoleSavedSuccessfully>
+    <ThisRoleAlreadyExists>
+      This Role already exists!
+    </ThisRoleAlreadyExists>
+    <ThisIsSystemRoleAndCannotBeDeleted>
+      This is system role. It cannot be deleted!
+    </ThisIsSystemRoleAndCannotBeDeleted>
+    <RoleIsDeletedSuccessfully>
+      Role is deleted successfully
+    </RoleIsDeletedSuccessfully>
+    <RoleCannnotBeDeleted>
+      Role cannot deleted! Please, try again.
+    </RoleCannnotBeDeleted>
+    <DuplicateEmailAddress>
+      Duplicate email address!
+    </DuplicateEmailAddress>
+    <NameAlreadyExists>
+      UserName already exists!
+    </NameAlreadyExists>
+    <InvalidAnswer>Invalid answer!</InvalidAnswer>
+    <InvalidEmailAddress>
+      Email address is already reserved!
+    </InvalidEmailAddress>
+    <InvalidPassword>Invalid password!</InvalidPassword>
+    <InvalidQuestion>Invalid question!</InvalidQuestion>
+    <NameIsInvalid>Name is invalid!</NameIsInvalid>
+    <NameIsRejected>Name is rejected!</NameIsRejected>
+    <PleaseEnterAllRequiredFields>
+      Please, enter all required fields!
+    </PleaseEnterAllRequiredFields>
+    <UserAlreadyExists>
+      User already exists!
+    </UserAlreadyExists>
+    <PleaseEnterAllRequiredField>
+      Please, enter all required fields!
+    </PleaseEnterAllRequiredField>
+    <UserAlreadyExist>
+      User already exists!
+    </UserAlreadyExist>
+    <SelectEditButtonOnceAgain>
+      Select edit button once again!
+    </SelectEditButtonOnceAgain>
+    <UserDeletedSuccessfully>
+      User deleted successfully!
+    </UserDeletedSuccessfully>
+    <SelectDeleteButtonOnceAgain>
+      Select delete button once again!
+    </SelectDeleteButtonOnceAgain>
+    <UserInformationSaveSuccessfully>
+      User information saved successfully!
+    </UserInformationSaveSuccessfully>
+    <PleaseEnterTheRequiredFields>
+      Please, enter the required fields!,
+    </PleaseEnterTheRequiredFields>
+    <UserRolesUpdatedSuccessfully>
+      User roles updated successfully.
+    </UserRolesUpdatedSuccessfully>
+    <UnknownErrorOccur>
+      Unknown Error occured: Please try again.
+    </UnknownErrorOccur>
+    <UserPasswordChangedSuccessfully>
+      User password changed successfully.
+    </UserPasswordChangedSuccessfully>
+    <PleaseEnterTheRequiredField>
+      Please, enter the required fields!
+    </PleaseEnterTheRequiredField>
+    <SelectedUsersAreDeletedSuccessfully>
+      Selected users are deleted successfully!
+    </SelectedUsersAreDeletedSuccessfully>
+    <SelectedChangesAreSavedSuccessfully>
+      Changes you have made are saved successfully!
+    </SelectedChangesAreSavedSuccessfully>
+    <PleaseFill>
+      Please fillup the folling information
+    </PleaseFill>
+    <PropertyValue>Property Value</PropertyValue>
+    <PleaseFil>Please fill</PleaseFil>
+    <Caption>Caption</Caption>
+    <PleaseFillAgain>Please fill again</PleaseFillAgain>
+    <AgainCaption>Caption</AgainCaption>
+    <PropertyValueAgain>Property Value</PropertyValueAgain>
+    <DataTypeMustBeString>
+      Data type must be string!
+    </DataTypeMustBeString>
+    <ProfileUpdatedSuccessfully>
+      Profile Updated Successfully
+    </ProfileUpdatedSuccessfully>
+    <ProfileAddedSuccessfully>
+      Profile Added Successfully
+    </ProfileAddedSuccessfully>
+    <ChangesSavedSuccessfully>
+      Changes Saved Successfully
+    </ChangesSavedSuccessfully>
+    <UserProfileSavedSuccessfully>
+      Profile saved successfully
+    </UserProfileSavedSuccessfully>
+    <ProfileDeletedSuccessfully>
+      Profile Deleted Successfully
+    </ProfileDeletedSuccessfully>
+    <PleaseProvideActualDateOfBirth>
+      Please provide actual date of birth!
+    </PleaseProvideActualDateOfBirth>
+    <ProvideActualDateOfBirth>
+      Please provide actual date of birth!
+    </ProvideActualDateOfBirth>
+    <AreYouSureToDelete>
+      Are you sure you want to delete?
+    </AreYouSureToDelete>
+    <AreYouSureYOuWantToDelete>
+      Are you sure you want to delete?
+    </AreYouSureYOuWantToDelete>
+    <WantToDelete>
+      Are you sure you want to delete?
+    </WantToDelete>
+    <SureToDelete>
+      Are you sure you want to delete?
+    </SureToDelete>
+    <NoUsersSelected>
+      At least one user must be selected
+    </NoUsersSelected>
+    <AreYouSureToSaveChanges>
+      Are you sure you want to save changes?
+    </AreYouSureToSaveChanges>
+    <InvalidImageFile>Invalid Image File.</InvalidImageFile>
+    <InvalidImageFileSize>Invalid Image Size.</InvalidImageFileSize>
+    <EmailAddressAlreadyIsInUse>
+      Email Address is already in use.
+    </EmailAddressAlreadyIsInUse>
+    <UserCreatedSuccessfully>
+      User Created Successfully.
+    </UserCreatedSuccessfully>
+    <SettingSavedSuccessfully>
+      Setting Saved Successfully.
+    </SettingSavedSuccessfully>
+    <PleaseSelectRole>
+      Please select a role.
+    </PleaseSelectRole>
+  </UserManagement>
+  <UserLogin>
+    <Youarenotauthenticatedtothisportal>
+      You are not authorized to access this portal
+    </Youarenotauthenticatedtothisportal>
+    <UsernameandPasswordcombinationdoesntmatched>
+      Username and Password combination didn't match!
+    </UsernameandPasswordcombinationdoesntmatched>
+    <UserDoesnotExist>User does not exist.</UserDoesnotExist>
+  </UserLogin>
+  <LoginStatus>
+    <MyProfile>My Profile</MyProfile>
+    <Logout>Logout</Logout>
+    <Login>Login</Login>
+    <Register>
+      Register</Register>
+  </LoginStatus>
+  <WebAnalytics>
+    <GoogleAnalyticsisUpdatedSuccessfully>
+      Google Analytics is updated successfully!
+    </GoogleAnalyticsisUpdatedSuccessfully>
+    <PleaseFillJSCodeProvidedByGoogle>
+      Please fill JS code provided by google
+    </PleaseFillJSCodeProvidedByGoogle>
+  </WebAnalytics>
+  <SQL>
+    <TheQueryCompletedSuccessfully>
+      The Query completed successfully!
+    </TheQueryCompletedSuccessfully>
+    <ThereIsAnErrorInYourQuery>
+      There is an error in your query!
+    </ThereIsAnErrorInYourQuery>
+  </SQL>
+  <PAGES>
+    <NameAlreadyExist>Name already Exist!</NameAlreadyExist>
+    <NameAlreadyExists>Name already Exist!</NameAlreadyExists>
+    <UsernameDoesnotExist>
+      Username doesnot exist!
+    </UsernameDoesnotExist>
+    <UsernameAlreadyExist>
+      Username already exist!
+    </UsernameAlreadyExist>
+    <CannotBeUploadedAsItExceedsTheSizelimit>
+      The image you are trying to upload cannot be uploaded because it exceeds the 1 MB size limit.
+    </CannotBeUploadedAsItExceedsTheSizelimit>
+    <FileTypeNotValid>
+      Invalid File Type. Valid File Types Includes: jpg,jpeg,jpe,gif,bmp,png,swf,ico
+    </FileTypeNotValid>
+    <CreatedBy>Created By</CreatedBy>
+    <LastUpdatedBy>Last Updated By</LastUpdatedBy>
+    <Location>
+      Location:(Enter The Address Of The Link)
+    </Location>
+    <Http>http://</Http>
+    <YourFile>Your file:</YourFile>
+    <File>File:</File>
+    <PageAddedSuccessfully>
+      Pages Added Successfully.
+    </PageAddedSuccessfully>
+    <PageModuleAddedSuccessfully>
+      PageModule Added Successfully
+    </PageModuleAddedSuccessfully>
+    <PageUpdatedSuccessfully>
+      Page Updated Successfully
+    </PageUpdatedSuccessfully>
+    <UploadedFileError>
+      The file you uploaded is corrupted!
+    </UploadedFileError>
+    <AreYouSureToSaveChanges>
+      Are you sure you want to save the changes?
+    </AreYouSureToSaveChanges>
+    <SelectedChangesAreSavedSuccessfully>
+      Selected changes are saved successfully.
+    </SelectedChangesAreSavedSuccessfully>
+    <ParentNotSame>
+      Sorry,you cannot make itself a Parent page.
+    </ParentNotSame>
+    <ModulePermissionSaveSuccessfully>
+      Module Permission saved successfully.
+    </ModulePermissionSaveSuccessfully>
+    <UserModuleTableEditMode>
+      User module table is in edit mode
+    </UserModuleTableEditMode>
+    <AreYouSureToDelete>
+      Are you sure you want to delete?
+    </AreYouSureToDelete>
+    <DeletePageConfirm>
+      It will delete all the page and its content! Are you sure to delete?
+    </DeletePageConfirm>
+  </PAGES>
+  <MessageManagement>
+    <MessageTemplateIsUpdatedSuccessfully>
+      Message Template updated successfully
+    </MessageTemplateIsUpdatedSuccessfully>
+    <MessageTemplateCouldnotBeUpdated>
+      Error: Couldn't update Message Template! Please, try again!
+    </MessageTemplateCouldnotBeUpdated>
+    <MessageTemplateCouldnotBeAdded>
+      Error:Couldn't add Message Template ! Please, try again!
+    </MessageTemplateCouldnotBeAdded>
+    <PleaseFill>
+      Please fill up the below information
+    </PleaseFill>
+    <MessageTemplateSubject>
+      message template subject
+    </MessageTemplateSubject>
+    <MessageTemplateBody>
+      message template body
+    </MessageTemplateBody>
+    <FromEmailAddressIsRequired>
+      From email address is required
+    </FromEmailAddressIsRequired>
+    <MessageTemplateIsDeletedSuccessfully>
+      Message Template deleted successfully
+    </MessageTemplateIsDeletedSuccessfully>
+    <MessageTemplateIsAddedSuccessfully>
+      Message template type is added successfully
+    </MessageTemplateIsAddedSuccessfully>
+    <PleaseSaveMessageTemplateTypeAgain>
+      Unknown Error: Please! save Message template type again
+    </PleaseSaveMessageTemplateTypeAgain>
+    <MessageTemplateTypeIsRequiredField>
+      Message template type is a required field!
+    </MessageTemplateTypeIsRequiredField>
+    <AreYouSureYOuWantToDelete>
+      Are you sure you want to delete?
+    </AreYouSureYOuWantToDelete>
+  </MessageManagement>
+  <ListSettings>
+    <ListIsDeletedSuccessfully>
+      List is deleted successfully
+    </ListIsDeletedSuccessfully>
+    <ListItemIsDeletedSuccessfully>
+      List item is deleted successfully
+    </ListItemIsDeletedSuccessfully>
+    <TheListIsShiftedUpSuccessfully>
+      The List is shifted up successfully
+    </TheListIsShiftedUpSuccessfully>
+    <TheListIsShiftedDownSuccessfully>
+      The List is shifted downn successfully
+    </TheListIsShiftedDownSuccessfully>
+    <ListIsEditedSuccessfully>
+      List is edited successfully
+    </ListIsEditedSuccessfully>
+    <ListIsAddedSuccessfully>
+      List is added successfully
+    </ListIsAddedSuccessfully>
+    <WantToDelete>
+      Are you sure you want to delete?
+    </WantToDelete>
+    <Entries>Entries</Entries>
+    <ListAlreadyExists>
+      List with this name exists already.
+    </ListAlreadyExists>
+  </ListSettings>
+  <HostSettings>
+    <SettingUpdatedSuccessfully>
+      Setting Updated Successfully!
+    </SettingUpdatedSuccessfully>
+    <SMTPServerIsWorking>
+      SMTP server is working...
+    </SMTPServerIsWorking>
+    <PleaseFillServerAddress>
+      Please Fill Server Address
+    </PleaseFillServerAddress>
+  </HostSettings>
+  <FAQs>
+    <FAQsCategoryISUpdatedSuccessfully>
+      FAQs Category is updated successfully.
+    </FAQsCategoryISUpdatedSuccessfully>
+    <NameAlreadyExist>Name already Exist!</NameAlreadyExist>
+    <FAQsCategoryIsAddedSuccessfully>
+      FAQs Category is added successfully.
+    </FAQsCategoryIsAddedSuccessfully>
+    <NameAlreadyExists>Name already Exist!</NameAlreadyExists>
+    <FAQsCategoryIsDeletedSuccessfully>
+      FAQs Category is deleted successfully.
+    </FAQsCategoryIsDeletedSuccessfully>
+    <LastUpdatedBy>Last Updated By</LastUpdatedBy>
+    <CreatedBy>Created By</CreatedBy>
+    <Question>
+      Q[INDEX]. [QUESTION]
+    </Question>
+    <Answer>Answer: [ANSWER]</Answer>
+    <AreYouSureToDelete>
+      Are You Sure You Want To Delete?
+    </AreYouSureToDelete>
+    <FAQsIsDeletedSuccessfully>
+      FAQs Is Deleted Successfully
+    </FAQsIsDeletedSuccessfully>
+    <FAQsIsUpdatedSuccessfully>
+      FAQs Is Updated Successfully
+    </FAQsIsUpdatedSuccessfully>
+    <FAQsIsNotUpdated>
+      FAQs can't be updated!
+    </FAQsIsNotUpdated>
+    <FAQsIsAddedSuccessfully>
+      FAQs Is Added Successfully
+    </FAQsIsAddedSuccessfully>
+    <FAQsCategoryIsNotSelected>
+      FAQs Category Is Not Selected
+    </FAQsCategoryIsNotSelected>
+    <FAQsSettingIsSavedSuccessfully>
+      FAQs Setting is saved Successfully.
+    </FAQsSettingIsSavedSuccessfully>
+    <FAQsPleaseEnterSomeContent>
+      Please enter some content!
+    </FAQsPleaseEnterSomeContent>
+  </FAQs>
+  <Extensions_Editors>
+    <ModuleControlAlreadyExists>
+      The control type you specified alreadly contains in this module.
+    </ModuleControlAlreadyExists>
+    <ModuleControlIsAddedSuccessfully>
+      Module control is added successfully.
+    </ModuleControlIsAddedSuccessfully>
+    <ModuleControlIsDeletedSuccessfully>
+      Module control is deleted successfully.
+    </ModuleControlIsDeletedSuccessfully>
+    <ModuleControlIsUpdatedSuccessfully>
+      Module control is updated successfully.
+    </ModuleControlIsUpdatedSuccessfully>
+    <ModuleDefinitionIsUpdatedSuccessfully>
+      Module Definition is updated successfully.
+    </ModuleDefinitionIsUpdatedSuccessfully>
+    <ModuleExtensionIsAddedSuccessfully>
+      Module Extension is added successfully.
+    </ModuleExtensionIsAddedSuccessfully>
+    <ModuleExtensionIsUpdatedSuccessfully>
+      Module Extension is updated successfully.
+    </ModuleExtensionIsUpdatedSuccessfully>
+    <ModuleIsDeletedSuccessfully>
+      Module is deleted successfully.
+    </ModuleIsDeletedSuccessfully>
+    <TheModuleIsInstalledSuccessfully>
+      The Module is installed successfully!
+    </TheModuleIsInstalledSuccessfully>
+    <LastUpdatedBy>Last Updated By</LastUpdatedBy>
+    <WarningMessageWillDeleteAllFiles>
+      Repairing  previous installed Module will overwrite all database and files content.
+    </WarningMessageWillDeleteAllFiles>
+    <YouNeedToSelectAFileToUploadFirst>
+      You need to select a file to upload first - click the Browse button to locate the file on your local file system.
+    </YouNeedToSelectAFileToUploadFirst>
+    <InvalidFileExtension>
+      Invalid File Extension -
+    </InvalidFileExtension>
+    <ThisPackageIsNotValid>
+      This package does not appear to be a valid SageFrame Extension as it does not have a manifest.
+    </ThisPackageIsNotValid>
+    <ThisPackageDoesNotAppearToBeValid>
+      This package does not appear to be a valid SageFrame Extension as it does not have a valid manifest.
+    </ThisPackageDoesNotAppearToBeValid>
+    <ThisPackageDoesNotAppearToHaveManifestFile>
+      This package does not appear to have a valid manifest. It is built-in system modules and can't be uninstalled.
+    </ThisPackageDoesNotAppearToHaveManifestFile>
+    <ThereIsErrorWhileInstallingThisModule>
+      There occured error while installing this Module!
+    </ThereIsErrorWhileInstallingThisModule>
+    <AcceptThePackageLicenseAgreementFirst>
+      Accept the package License agreement first!
+    </AcceptThePackageLicenseAgreementFirst>
+    <CreatedBy>Created By</CreatedBy>
+    <ThereIsErrorWhileInstalling>
+      There occured error during installation!
+    </ThereIsErrorWhileInstalling>
+    <ModuleInstalledSuccessfully>
+      Module is installed successfully!
+    </ModuleInstalledSuccessfully>
+    <ErrorWhileInstalling>
+      There occured error while installing!
+    </ErrorWhileInstalling>
+    <ConfirmUninstallExtension>
+      Are you sure you want to uninstall this extension?
+    </ConfirmUninstallExtension>
+    <ModuleFolderDoesnotExist>
+      Conflit Occured.Specified Folder Name doesn't exist in database,you need to conifgure it manually
+    </ModuleFolderDoesnotExist>
+    <ThisModuleSeemsToBeCorrupted>
+      This Module Extension package has been corrupted!
+    </ThisModuleSeemsToBeCorrupted>
+    <ModuleExtensionIsUninstallError>
+      There occured error while uninstalling!
+    </ModuleExtensionIsUninstallError>
+    <ModuleExtensionIsUninstalledSuccessfully>
+      The Module Extension is uninstalled successfully.
+    </ModuleExtensionIsUninstalledSuccessfully>
+    <AreYouSureToSaveChanges>
+      Are you sure to save the changes?
+    </AreYouSureToSaveChanges>
+    <AreYouSureToDelete>
+      Are you sure you want to delete?
+    </AreYouSureToDelete>
+    <SelectedChangesAreSavedSuccessfully>
+      Changes you have made are saved successfully.
+    </SelectedChangesAreSavedSuccessfully>
+    <ModuleExtensionSourceIsEmpty>
+      You haven't selected the Module source control!
+    </ModuleExtensionSourceIsEmpty>
+  </Extensions_Editors>
+  <EventViewer>
+    <AreYouSureToClearLogs>
+      Are you sure to clear all Logs?
+    </AreYouSureToClearLogs>
+    <AreYouSureToDeleteLogs>
+      Are you sure to delete the selected Logs?
+    </AreYouSureToDeleteLogs>
+    <AreYouSureToDeleteLog>
+      Are you sure to delete Log?
+    </AreYouSureToDeleteLog>
+    <LogDeletedSuccessfully>
+      Log Deleted Successfully.
+    </LogDeletedSuccessfully>
+    <LogClearedSuccessfully>
+      Log Cleared Successfully.
+    </LogClearedSuccessfully>
+    <MailSentSuccessfully>
+      Email Sent Successfully.
+    </MailSentSuccessfully>
+  </EventViewer>
+  <ControlPanel>
+    <ModuleAddedSuccessfully>
+      Module Added Successfully.
+    </ModuleAddedSuccessfully>
+    <ModuleDeletedSuccessfully>
+      Module Deleted Successfully.
+    </ModuleDeletedSuccessfully>
+    <ModuleAgainDeletedSuccessfully>
+      Module Deleted Successfully.
+    </ModuleAgainDeletedSuccessfully>
+    <ModuleUpdatedSuccessfully>
+      Module Updated Successfully.
+    </ModuleUpdatedSuccessfully>
+    <Pane>Pane:</Pane>
+    <Module>Module:</Module>
+    <Title>Title:</Title>
+    <Insert>Insert:</Insert>
+    <Visibility>Visibility:</Visibility>
+    <UserModule>User Module:</UserModule>
+    <AddSelectedModuleToPage>
+      Add selected module to page
+    </AddSelectedModuleToPage>
+    <ModuleIsNotSelected>
+      Module is not selected!
+    </ModuleIsNotSelected>
+  </ControlPanel>
+  <Adsense>
+    <AreYouSureToDelete>
+      Are you sure you want to delete?
+    </AreYouSureToDelete>
+    <AdsenseSavedSuccessfully>
+      Adsense Saved Successfully.
+    </AdsenseSavedSuccessfully>
+    <AdsenseDeletedSuccessfully>
+      Adsense Deleted Successfully.
+    </AdsenseDeletedSuccessfully>
+  </Adsense>
+  <Banner>
+    <LimitForCategory>
+      Limit for Category is
+    </LimitForCategory>
+    <CategoryAddedSuccessfully>
+      Category Added Successfully.
+    </CategoryAddedSuccessfully>
+    <CategoryUpdatedSuccessfully>
+      Category Updated Successfully.
+    </CategoryUpdatedSuccessfully>
+    <InvalidImageFileOrFileLength>
+      Invalid Image File/File Length.
+    </InvalidImageFileOrFileLength>
+    <CategoryAgainAddedSuccessfully>
+      Category Added Successfully.
+    </CategoryAgainAddedSuccessfully>
+    <CategoryAgainUpdatedSuccessfully>
+      Category Updated Successfully.
+    </CategoryAgainUpdatedSuccessfully>
+    <CategoryDeletedSuccessfully>
+      Category Deleted Successfully.
+    </CategoryDeletedSuccessfully>
+    <TheLimitForArticle>
+      The Limit for article is
+    </TheLimitForArticle>
+    <ArticleAddedSuccessfully>
+      Article Added Successfully.
+    </ArticleAddedSuccessfully>
+    <ArticleUpdatedSuccessfully>
+      Article Updated Successfully.
+    </ArticleUpdatedSuccessfully>
+    <InvalidFileOrFileLength>
+      Invalid File/ File Length.
+    </InvalidFileOrFileLength>
+    <ArticleAgainAddedSuccessfully>
+      Article Added Successfully.
+    </ArticleAgainAddedSuccessfully>
+    <ArticleAgainUpdatedSuccessfully>
+      Article Updated Successfully.
+    </ArticleAgainUpdatedSuccessfully>
+    <ArticleDeletedSuccessfully>
+      Article Deleted Successfully.
+    </ArticleDeletedSuccessfully>
+    <TheLimitForScreenShotsImage>
+      The limit for ScreenShots Image is
+    </TheLimitForScreenShotsImage>
+    <ScreenShotsAddedSuccessfully>
+      ScreenShots Added Successfully.
+    </ScreenShotsAddedSuccessfully>
+    <ScreenShotsUpdatedSuccessfully>
+      ScreenShots Updated Successfully.
+    </ScreenShotsUpdatedSuccessfully>
+    <InvalidFileAndFileLength>
+      Invalid File/File Length.
+    </InvalidFileAndFileLength>
+    <ScreenShotsAgainUpdatedSuccessfully>
+      ScreenShots Updated Successfully.
+    </ScreenShotsAgainUpdatedSuccessfully>
+    <ImageIsRequired>Image is Required.</ImageIsRequired>
+    <ScreenShotDeletedSuccessfully>
+      ScreenShot Deleted Successfully.
+    </ScreenShotDeletedSuccessfully>
+    <CategorySettingSavedSuccessfully>
+      Category Setting Saved Successfully.
+    </CategorySettingSavedSuccessfully>
+    <ArticleSettingSavedSuccessfully>
+      Article Setting Saved Successfully.
+    </ArticleSettingSavedSuccessfully>
+    <InvalidFileOrFileSize>
+      Invalid File/ File Size
+    </InvalidFileOrFileSize>
+    <PleaseEnterSomeContent>
+      Please enter some content
+    </PleaseEnterSomeContent>
+    <PleaseEnterContent>
+      Please enter some content
+    </PleaseEnterContent>
+    <ReadMore>Read More</ReadMore>
+    <AreYouSureToDelete>
+      Are you sure you want to delete?
+    </AreYouSureToDelete>
+  </Banner>
+  <PasswordRecovery>
+    <UsernameOrEmailAddressDoesnotMatched>
+      Username or Email address doesnot match!
+    </UsernameOrEmailAddressDoesnotMatched>
+    <UsernameOrEmailAddressDoesnotMatchedAgain>
+      Username or Email address didnt match!
+    </UsernameOrEmailAddressDoesnotMatchedAgain>
+    <PleaseEnterAllTheRequiredFields>
+      Please, enter  all the required fields
+    </PleaseEnterAllTheRequiredFields>
+    <InvalidRecoveringCode>
+      Invalid recovering code
+    </InvalidRecoveringCode>
+    <RecoveringCodeIsNotAvailable>
+      Recovering code is not available
+    </RecoveringCodeIsNotAvailable>
+    <UnknownErrorPleaseTryAgaing>
+      Unknown error: Please, try again!
+    </UnknownErrorPleaseTryAgaing>
+    <UnknownError>Unknown Error:!</UnknownError>
+    <PleaseEnterAllRequiredFields>
+      Please, enter all required fields!
+    </PleaseEnterAllRequiredFields>
+    <UsernameNotActivated>
+      User is not activated! First activate the user.
+    </UsernameNotActivated>
+    <UserNameIsRequired>
+      User Name is required!
+    </UserNameIsRequired>
+    <UserEmailAddressIsRequired>
+      Valid Email address is required!
+    </UserEmailAddressIsRequired>
+    <UserEmailAddressIsNotValid>
+      Email address is not valid!
+    </UserEmailAddressIsNotValid>
+    <PasswordIsRequired>
+      Password is required.
+    </PasswordIsRequired>
+    <RetypePassword>
+      Retype password is required.
+    </RetypePassword>
+    <PasswordDoesnotMatched>
+      Password does not matched.
+    </PasswordDoesnotMatched>
+    <PasswordLength>
+      Password must contain atleat four character.
+    </PasswordLength>
+  </PasswordRecovery>
+  <UserRegistration>
+    <InvalidActivationCode>
+      Invalid activation code
+    </InvalidActivationCode>
+    <InvalidActivationCodeAgain>
+      Invalid activation code
+    </InvalidActivationCodeAgain>
+    <PleaseEnterAllRequiredFields>
+      Please, enter all required fields!
+    </PleaseEnterAllRequiredFields>
+    <EnterTheCorrectCapchaCode>
+      Enter the correct capcha code!
+    </EnterTheCorrectCapchaCode>
+    <UserNameIsRequired>
+      User Name is required.
+    </UserNameIsRequired>
+    <PasswordIsRequired>
+      Password is required.
+    </PasswordIsRequired>
+    <PasswordConfirmIsRequired>
+      Password Confirmation is required.
+    </PasswordConfirmIsRequired>
+    <FirstNameIsRequired>
+      First name is required.
+    </FirstNameIsRequired>
+    <LastNameIsRequired>
+      Last name is required.
+    </LastNameIsRequired>
+    <EmailAddressIsRequired>E-mail is required.</EmailAddressIsRequired>
+    <SecurityQuestionIsRequired>
+      Security question is required.
+    </SecurityQuestionIsRequired>
+    <SecurityAnswerIsRequired>
+      Security answer is required.
+    </SecurityAnswerIsRequired>
+    <PasswordRetypeMatch>
+      The Password and Retyped Password must match.
+    </PasswordRetypeMatch>
+    <EmailAddressIsNotValid>
+      Email address is not valid!
+    </EmailAddressIsNotValid>
+    <GoToLogin>Go to Login</GoToLogin>
+    <UserRegistrationSuccessPublic>
+      User Registration is successful. A confirmation email has been sent to your account. Click the activation link.
+    </UserRegistrationSuccessPublic>
+  </UserRegistration>
+  <HTML>
+    <AreYouSureToDelete>
+      Are you sure you  to delete?
+    </AreYouSureToDelete>
+    <PleaseEnterSomeContent>
+      Please enter some content!
+    </PleaseEnterSomeContent>
+    <HTMLContentIsAddedSuccessfully>
+      HTML Content is added successfully.
+    </HTMLContentIsAddedSuccessfully>
+    <HTMLContentIsUpdatedSuccessfully>
+      HTML Content is updated successfully.
+    </HTMLContentIsUpdatedSuccessfully>
+    <CommentIsAddedSuccessfully>
+      Comment is added successfully.
+    </CommentIsAddedSuccessfully>
+    <CommentWillBeAddedAfterApproved>
+      Your Comment will appear after it has been approved.
+    </CommentWillBeAddedAfterApproved>
+    <CommentIsUpdatedSuccessfully>
+      Comment is updated successfully.
+    </CommentIsUpdatedSuccessfully>
+    <CommentIsDeletedSuccessfully>
+      Comment is deleted successfully.
+    </CommentIsDeletedSuccessfully>
+    <PleaseWriteComments>
+      Please Write Comments!
+    </PleaseWriteComments>
+  </HTML>
+  <NewsModule>
+    <NewsIsDeletedSuccessfully>
+      News is deleted successfully.
+    </NewsIsDeletedSuccessfully>
+    <NewsIsUpdatedSuccessfully>
+      News is updated successfully.
+    </NewsIsUpdatedSuccessfully>
+    <NewsIsAddedSuccessfully>
+      News is added successfully.
+    </NewsIsAddedSuccessfully>
+    <PleaseSelectBothTheNewsTypeAndCatgoryName>
+      Please select both the news type and category name from the dropdown lists first!
+    </PleaseSelectBothTheNewsTypeAndCatgoryName>
+    <NewsCategoryIsAddedSuccessfully>
+      News Category is added successfully.
+    </NewsCategoryIsAddedSuccessfully>
+    <NameAlreadyExist>Name already Exist!</NameAlreadyExist>
+    <NewsCategoryIsUpdatedSuccessfully>
+      News Category is updated successfully.
+    </NewsCategoryIsUpdatedSuccessfully>
+    <NameAlreadyExists>Name already Exist!</NameAlreadyExists>
+    <InvalidImageFileOrFileLength>
+      Invalid Image File/File Length.
+    </InvalidImageFileOrFileLength>
+    <NameExistAlready>Name already Exist!</NameExistAlready>
+    <NewsCategoryIsAgainAddedSuccessfully>
+      News Category is added successfully.
+    </NewsCategoryIsAgainAddedSuccessfully>
+    <NameAlreadyExistAgain>Name already Exist!</NameAlreadyExistAgain>
+    <NewsCategoryIsDeletedSuccessfully>
+      News Category is deleted successfully.
+    </NewsCategoryIsDeletedSuccessfully>
+    <CategorySettingSavedSuccessfully>
+      Category Setting Saved Successfully.
+    </CategorySettingSavedSuccessfully>
+    <NewsSettingSavedSuccessfully>
+      News Setting Saved Successfully.
+    </NewsSettingSavedSuccessfully>
+    <AreYouSureToDelete>
+      Are you sure you want to delete?
+    </AreYouSureToDelete>
+    <PleaseEnterSomeContent>
+      Please enter some content
+    </PleaseEnterSomeContent>
+    <Save>Save</Save>
+    <AreYouSureYouWantToDelete>
+      Are you sure  you want to delete?
+    </AreYouSureYouWantToDelete>
+    <LimitForCategory>
+      Limit for Category is
+    </LimitForCategory>
+  </NewsModule>
+  <ContactUs>
+    <ContactUsIsAddedSuccessfully>
+      Thank you, you have been added to our contact list successfully.
+    </ContactUsIsAddedSuccessfully>
+    <ContactUsEmailSubject>
+      Email Alert! from Contact Us
+    </ContactUsEmailSubject>
+  </ContactUs>
+  <FeedBack>
+    <SettingSavedSuccessfully>
+      Setting Saved Successfully
+    </SettingSavedSuccessfully>
+    <FeedBackSettingSavedSuccessfully>
+      FeedBack Setting Saved Successfully
+    </FeedBackSettingSavedSuccessfully>
+    <MailIsSendSuccessfully>
+      Email is send successfully
+    </MailIsSendSuccessfully>
+    <InformationSavedSuccessfully>
+      Information Saved Successfully
+    </InformationSavedSuccessfully>
+    <MailIsSendAndSavedSuccessfully>
+      Email is Send and Saved Successfully
+    </MailIsSendAndSavedSuccessfully>
+    <RecordDeletedSuccessfully>
+      Feedback is deleted successfully.
+    </RecordDeletedSuccessfully>
+    <PleaseUploadTheValidFile>
+      Please upload valid file!
+    </PleaseUploadTheValidFile>
+    <AreYouSureToDelete>
+      Are you sure you want to delete?
+    </AreYouSureToDelete>
+  </FeedBack>
+  <PortalSettings>
+    <PortalSettingIsSavedSuccessfully>
+      Portal Setting Is Saved Successfully.
+    </PortalSettingIsSavedSuccessfully>
+    <PortalDeleteSuccessfully>
+      Portal deleted successfully.
+    </PortalDeleteSuccessfully>
+    <PortalSaveSuccessfully>
+      Portal is saved successfully.
+    </PortalSaveSuccessfully>
+    <PortalSavedAndEmailSendSuccessfully>
+      Portal is created successfully and email has been sent to your provided email address with the login credentials.
+    </PortalSavedAndEmailSendSuccessfully>
+    <PortalAlreadyExist>
+      This Portal Name already Exists OR can't be added this time!
+    </PortalAlreadyExist>
+    <StoreSaveSuccessfully>
+      Your Store is created successfully and email has been sent to your provided email address with the login credentials.
+    </StoreSaveSuccessfully>
+    <StoreAlreadyExist>
+      This Store Name already Exists OR can't be added this time!
+    </StoreAlreadyExist>
+    <EmailSendProblem>
+      Your Store has been created but problem occured while sending mail! Please Contact us at info@aspxcommerce.com
+    </EmailSendProblem>
+  </PortalSettings>
+  <PortalModules>
+    <SelectedChangesAreSavedSuccessfully>
+      Selected changes are saved successfully.
+    </SelectedChangesAreSavedSuccessfully>
+    <AreYouSureToSaveChanges>
+      Are you sure you want to  save the changes?
+    </AreYouSureToSaveChanges>
+    <PortalIsNotSelected>
+      Portal is not selecetd form dropdown!
+    </PortalIsNotSelected>
+  </PortalModules>
+  <CSSManagement>
+    <CSSIsSavedSuccessfully>
+      Css is saved successfully.
+    </CSSIsSavedSuccessfully>
+  </CSSManagement>
+  <TemplateManagement>
+    <UnknownError>
+      Unknown error has occured!
+    </UnknownError>
+    <TemplateSavedSuccessfully>
+      Template is saved successfully!
+    </TemplateSavedSuccessfully>
+    <TemplateDeletedSuccessfully>
+      Template is deleted successfully!
+    </TemplateDeletedSuccessfully>
+    <TemplateIsInUse>
+      This template is in use. It cannot be deleted!
+    </TemplateIsInUse>
+    <TemplateInstallSuccessfully>
+      Template install successful!
+    </TemplateInstallSuccessfully>
+    <InvalidTemplate>
+      This template is not a  valid one!
+    </InvalidTemplate>
+    <InvalidTemplateZip>
+      You are uploading invalid zip file! please, upload valid template zip!
+    </InvalidTemplateZip>
+    <TemplateAlreadyInstall>
+      This template is already installed!
+    </TemplateAlreadyInstall>
+    <TemplateCannotDeleted>
+      This template is default template, so can't be deleted!
+    </TemplateCannotDeleted>
+    <AreYouSureToDelete>
+      Are you sure you want to delete
+    </AreYouSureToDelete>
+    <ZipFileIsCorrupt>
+      The zip file is corrupt.
+    </ZipFileIsCorrupt>
+  </TemplateManagement>
+  <NewsLetterSubscription>
+    <EmailIsRequired>
+      Email address not valid.Valid Email Address is required!
+    </EmailIsRequired>
+    <SubscribeSuccessfully>
+      You have been successfully subscribed to our newsletter.
+    </SubscribeSuccessfully>
+    <AlreadySubscribed>
+      You have already subscribed to us!
+    </AlreadySubscribed>
+    <SubscribtionSettingSuccessfullySaved>
+      Subscribtion Settings Successfully Saved.
+    </SubscribtionSettingSuccessfullySaved>
+  </NewsLetterSubscription>
+  <SageFrameSearch>
+    <BlankValueNotAllowed>
+      Please fill all setting values!
+    </BlankValueNotAllowed>
+    <SearchSettingSavedSuccessfully>
+      Setting Saved Successfully.
+    </SearchSettingSavedSuccessfully>
+    <NoResultFoundForGivenSearchKey>
+      No Result found for the searched key word
+    </NoResultFoundForGivenSearchKey>
+    <PleaseFillValidTextToSearch>
+      Please fill text that is valid
+    </PleaseFillValidTextToSearch>
+    <AreYouSureToDeletThisExtension>
+      Are you sure you want to delete this extension.
+    </AreYouSureToDeletThisExtension>
+    <SearchExtensionDeltedSuccessfully>
+      Search extension deleted successfully
+    </SearchExtensionDeltedSuccessfully>
+    <SearchExtensionSavedSuccessfully>
+      Search extension saved successfully
+    </SearchExtensionSavedSuccessfully>
+  </SageFrameSearch>
+  <LanguageModule>
+    <LanguageAddedSuccessfully>
+      Language is successfully added!
+    </LanguageAddedSuccessfully>
+    <PackageCreatedSuccessfully>
+      Package sucessfully created.
+    </PackageCreatedSuccessfully>
+    <SelectAFileFirst>
+      Please select a file first.
+    </SelectAFileFirst>
+    <InvalidFileExtension>
+      File Extension is Invalid.
+    </InvalidFileExtension>
+    <ThisPackageIsNotValid>
+      Package is not valid.
+    </ThisPackageIsNotValid>
+    <ThisPackageDoesNotAppearToBeValid>
+      Package is not valid.
+    </ThisPackageDoesNotAppearToBeValid>
+    <ThereIsErrorWhileInstallingThisModule>
+      Error while installing module.
+    </ThereIsErrorWhileInstallingThisModule>
+    <AcceptThePackageLicenseAgreementFirst>
+      Please accept the agreement before proceeding.
+    </AcceptThePackageLicenseAgreementFirst>
+    <LanguagePackageInstalledSuccessfully>
+      Language Pack Installed Successfully.
+    </LanguagePackageInstalledSuccessfully>
+    <ResourceFileSavedSuccessfully>
+      Resource File is saved successfully.
+    </ResourceFileSavedSuccessfully>
+    <ResourceFileDeletedSuccessfully>
+      Resource File is deleted successfully.
+    </ResourceFileDeletedSuccessfully>
+    <DefaultFileCannotBeDeleted>
+      Default File cannot be deleted.
+    </DefaultFileCannotBeDeleted>
+    <ResourceFileCouldNotBeRead>
+      The resource file could not be read. It may contain repeated keys or inconsistent line endings.
+    </ResourceFileCouldNotBeRead>
+  </LanguageModule>
+  <FileManager>
+    <SettingsAddedSuccessfully>
+      Settings updated successfully.
+    </SettingsAddedSuccessfully>
+  </FileManager>
+</SageFrameMessage>

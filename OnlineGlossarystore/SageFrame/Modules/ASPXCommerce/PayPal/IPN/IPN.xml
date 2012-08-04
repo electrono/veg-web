@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" standalone="yes"?>
+
+<IPN>
+  <IPN>
+    <TransactionID>1</TransactionID>
+    <PayerEmail>test@test.com</PayerEmail>
+    <Total>120</Total>
+    <PaymentStatus>completed</PaymentStatus>
+    <RecieverEmail>as@as.com</RecieverEmail>
+    <OrderID>1</OrderID>
+    <StoreID>1</StoreID>
+    <PortalID>1</PortalID>
+    <UserName>test</UserName>
+    <CustomerID>1</CustomerID>
+    <SessionCode>asdf</SessionCode>
+  </IPN>
+</IPN>

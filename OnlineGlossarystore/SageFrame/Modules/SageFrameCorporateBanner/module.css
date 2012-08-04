@@ -1,0 +1,271 @@
+﻿.container {
+    width: 980px;
+    background: #fff;
+    font-size: 12px;
+    background: transparent url(images/banner-btn-bg.jpg) no-repeat bottom;
+    padding: 0 0 18px 0;
+    height: 282px;
+}
+
+.container a {
+    text-transform: none;
+    color: #333
+}
+
+.lof-slidecontent {
+    position: relative;
+    overflow: hidden;
+    border: #F4F4F4 solid 1px;
+    width: 980px;
+    height: 280px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: url(images/banner-bg.png) no-repeat #eca325;
+}
+
+.lof-slidecontent .preload {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    color: #FFF;
+    text-align: center
+}
+
+.lof-slidecontent .preload div {
+    height: 100%;
+    width: 100%;
+    background: transparent url(images/load-indicator.gif) no-repeat scroll 50% 50%;
+}
+
+.lof-main-outer {
+    position: relative;
+    height: 100%;
+    width: 730px;
+    z-index: 3px;
+    overflow: hidden;
+}
+
+.lof-main-item-desc {
+    z-index: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    z-index: 50;
+}
+
+.lof-main-item-desc p {
+    font: 20px/25px Georgia, "Times New Roman", Times, serif;
+    color: #fff;
+    font-style: italic;
+    padding: 10px 0 0 20px;
+}
+
+.lof-main-item-desc h3 {
+    font: bold 26px/30px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 0 #724212;
+    background: url(images/banner-heading-line.png) no-repeat bottom;
+    display: block;
+    padding: 20px 0 20px 30px;
+}
+
+ul.lof-main-wapper {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+    height: 300px;
+    width: 730px;
+    position: absolute;
+    overflow: hidden;
+}
+
+ul.lof-main-wapper li {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 730px;
+    float: left;
+}
+
+.lof-opacity li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: inherit;
+}
+
+ul.lof-main-wapper li img {
+    padding: 0px;
+    float: right;
+    height: auto;
+    width: auto;
+    margin: 15px 0 0 0;
+    z-index: 200;
+}
+
+li-desc {
+    z-index: 100px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 400px;
+    background: url(images/transparent_bg.png); /* filter:0.7(opacity:60) */
+}
+
+li-desc p {
+    color: #FFF;
+    margin: 0 8px;
+    padding: 8px 0
+}
+
+li-desc h3 a {
+    color: #FFF;
+    margin: 0;
+    font-size: 140%;
+    padding: 20px 8px 2px;
+    font-family: "Trebuchet MS", Trebuchet, Arial, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+ul.lof-navigator {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+ul.lof-navigator li {
+    cursor: hand;
+    cursor: pointer;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.lof-navigator-outer {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    z-index: 100;
+    height: 276px !important;
+    width: 255px !important;
+    overflow: hidden;
+    color: #FFF
+}
+
+.lof-navigator li.active { color: #FFF }
+
+.lof-navigator li:hover { }
+
+.lof-navigator li h3 {
+    padding: 15px 0 0 22px !important;
+    margin: 0;
+    font-family: 'Ubuntu', arial, serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #8a8a8a;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.lof-navigator li div {
+    color: #FFF;
+    height: 100%;
+    width: 255px;
+    height: 92px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+}
+
+.lof-navigator li.active div {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;	
+}
+
+.lof-navigator li.active h3 { text-shadow: none; }
+
+.lof-navigator li img {
+    height: 92px;
+    width: 255px;
+}
+
+.lof-navigator li.active h3 {
+    color: #FFF;
+    padding: 15px 0 0 22px !important;
+}
+
+.cssClassReadMore { padding: 20px 0 0 20px; }
+
+.cssClassReadMore a {
+    background: url(images/readmore-left.png) no-repeat left top;
+    float: left;
+    height: 36px;
+    padding: 0 0 0 19px;
+    text-decoration: none !important;
+}
+
+.cssClassReadMore a span {
+    background: url(images/readmore-right.png) no-repeat right top;
+    float: left;
+    height: 36px;
+    padding: 0 19px 0 0;
+    font: bold 14px/36px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 0 #333333;
+    text-decoration: none !important;
+}
+
+.cssClassReadMore a:hover { background: url(images/readmore-left-hover.png) no-repeat left top; }
+
+.cssClassReadMore a:hover span { background: url(images/readmore-right-hover.png) no-repeat right top; }
+
+.cssClassSlide1 { background-color: #3693c3 !important; }
+
+.cssClassSlide2 { background-color: #71a709 !important; }
+
+.explore-sageframe { }
+
+.cms { }
+
+.application { }
+
+ul.lof-main-wapper li { position: relative; }
+
+.cssClassSlide0 .lof-main-item-desc h3 { text-shadow: 1px 1px 0 #794613; }
+
+.cssClassSlide0 .lof-main-item-desc p { text-shadow: 1px 1px 0 #a4611b; }
+
+.cssClassSlide1 .lof-main-item-desc h3 { text-shadow: 1px 1px 0 #2d789e; }
+
+.cssClassSlide1 .lof-main-item-desc p { text-shadow: 1px 1px 0 #27698a; }
+
+
+.cssClassSlide2 .lof-main-item-desc h3 { text-shadow: 1px 1px 0 #608e08; }
+
+.cssClassSlide1 .lof-main-item-desc p { text-shadow: 1px 1px 0 #527806; }
+
+.container span.cssclassNoBanner {
+    font: bold 24px/36px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+}

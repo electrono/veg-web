@@ -1,0 +1,49 @@
+GO
+/****** Object:  StoredProcedure [dbo].[usp_ASPX_PaypalSettingsGetAll]    Script Date: 07/12/2011 10:32:17 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_ASPX_PaypalSettingsGetAll]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_ASPX_PaypalSettingsGetAll]
+GO
+set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+-- [dbo].[usp_ASPX_PaypalSettingsGetAll] 1,1,1
+CREATE PROCEDURE [dbo].[usp_ASPX_PaypalSettingsGetAll]
+	@PaymentGatewayTypeID [int],
+	@PortalID [int],
+    @StoreID int
+WITH EXECUTE AS CALLER
+AS
+BEGIN
+SELECT
+	  *
+FROM
+	(
+	SELECT [dbo].[ASPX_PaymentGateWaySettingByKey].[SettingKey] AS SettingKey
+    ,Coalesce([dbo].[ASPX_PaymentGateWaySettingByValue].SettingValue,
+    [dbo].[ASPX_PaymentGateWaySettingByKey].SettingValue) AS SettingValue
+	FROM [dbo].[ASPX_PaymentGateWaySettingByValue]
+RIGHT JOIN [dbo].[ASPX_PaymentGateWaySettingByKey] ON [dbo].[ASPX_PaymentGateWaySettingByValue].SettingKey = [dbo].[ASPX_PaymentGateWaySettingByKey].SettingKey 
+AND [dbo].[ASPX_PaymentGateWaySettingByValue].[PaymentGatewayTypeID] = @PaymentGatewayTypeID 
+AND [dbo].[ASPX_PaymentGateWaySettingByValue].StoreID = @StoreID 
+AND [dbo].[ASPX_PaymentGateWaySettingByValue].PortalID=@PortalID
+	--WHERE [dbo].[NewsLetterSettingValue].UserModuleID = @UserModuleID AND [dbo].[NewsLetterSettingValue].PortalID=@PortalID
+	) DataTable
+PIVOT
+	(
+	  MAX([SettingValue])
+	  FOR [SettingKey]
+	  IN (
+		[ReturnUrl], 
+		[CancelUrl],
+		[BusinessAccount],
+		[VerificationUrl],
+        [IsTestPaypal],
+        [AuthToken]       
+	)
+) PivotTable
+END

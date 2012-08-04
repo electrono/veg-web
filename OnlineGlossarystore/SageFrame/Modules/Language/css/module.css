@@ -1,0 +1,627 @@
+﻿.inputStyle {
+    width: 300px;
+    height: 50px;
+}
+/*-----Pager Style---------*/
+
+ul { clear: both; }
+
+ul.paging li {
+    font-family: georgia;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 1px;
+    list-style: none !important;
+    overflow: hidden;
+}
+
+ul.red { outline: 10px solid red; }
+
+.cssClassLanguageEditpageContent ul.simplePagerNav {
+    overflow: hidden;
+    padding: 10px 0 0 0;
+}
+
+ul.simplePagerNav li {
+    display: block;
+    float: left;
+}
+
+ul.simplePagerNav li a {
+    background-color: #3FB8E7;
+    color: #fff;
+    font: bold 11px/20px Arial;
+    margin-right: 2px;
+    padding: 2px 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.simplePagerNav li a:hover {
+    text-decoration: none;
+    background-color: #3f8ee7;
+    font: bold 11px/20px Arial;
+    text-align: center;
+    color: #fff;
+    padding: 2px 6px 2px 6px;
+}
+
+ul.simplePagerNav li.currentPage a {
+    color: #fff;
+    background: #0082B5;
+}
+
+table.pageme {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+table.pageme td {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.pagenagiDiv { height: 200px; }
+/*-----End of Pager Style-----*/
+/*-----LanguageManager Style--*/
+
+.cssClassResourceTree {
+    width: 25%;
+    float: left;
+    border: 1px solid #ACD2E2;
+    overflow: auto;
+    min-height: 300px;
+    padding: 5px;
+}
+
+.cssClassResourceEditorOuter {
+    width: 65%;
+    padding: 10px;
+    float: right;
+    margin-left: 10px;
+    border: 1px solid #ACD2E2;
+    min-height: 300px;
+    background-color: #fff;
+}
+
+.cssClassResourceEditorOuter span p { font-weight: bold; }
+
+.cssClassRowsDiv {
+    display: none;
+    font-weight: bold;
+    color: #616161;
+    font: bold 11px Arial, Helvetica, sans-serif;
+}
+
+.cssClassRowsDiv select {
+    color: #616161;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    width: 50px;
+}
+
+.cssClassResxEditorHeader {
+    height: 30px;
+    /*border-top: 1px solid #305196;
+	border-bottom: 1px solid #305196;
+	background-color: #cfcfcf;*/
+	
+    background-color: #6CACC4;
+    color: #FFFFFF !important;
+    font: bold 12px/30px Arial, Helvetica, sans-serif !important;
+    padding: 0 0 0 5px;
+    text-align: left;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+
+.cssClassResxEditorHeader span.left {
+    float: left;
+    width: 49%;
+    font: bold 12px/30px Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.cssClassResxEditorHeader span.right {
+    float: right;
+    width: 49%;
+    font: bold 12px/30px Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.cssClassResxEditor {
+    display: none;
+    border: 2px solid #000;
+    height: 350px
+}
+/*-----End Of LanguageManager Style----*/
+/*----LanguagePackInstaller Style------*/
+
+.divWizard {
+    /*min-height: 200px;
+	max-height: 250px;*/
+    overflow: auto;
+    width: 100%;
+}
+
+.divWizard span.cssClassFormLabel { padding: 0 10px 0 0; }
+
+.cssClassTimeZoneEditorInput {
+    Width: 320px;
+    Height: 25px;
+}
+/*-----End Of LanguagePackInstaller Style----*/
+/*----CreateLanguagePack Styles---------------*/
+
+.cssClassLanguagePackCreaterModule { overflow: hidden }
+
+.cssClassLanguagePackCreaterModule ul {
+    padding: 0 0 5px 0;
+    overflow: hidden;
+}
+
+.cssClassLanguagePackCreaterModule ul li {
+    float: left;
+    width: 195px;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.cssClassLanguagePackCreaterModule ul li input {
+    float: left;
+    padding: 0 0 0 0;
+}
+
+.cssClassLanguagePackCreaterModule ul li span {
+    float: left;
+    padding: 0 5px;
+    font: 12px/17px Arial, Helvetica, sans-serif;
+}
+
+.cssClassModule {
+    width: 200px;
+    height: 20px;
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    padding: 3px;
+    border: 1px solid #e1a800;
+}
+
+#divModuleDetails {
+    max-height: 120px;
+    overflow: auto;
+}
+
+.cssClassSelectedFile { }
+
+.cssClassHighlight { background-color: #f7b59b; }
+
+#spanDefaultFlag { background-color: #f7b59b; }
+
+.cssClassDisplayNone { display: none; }
+
+.cssClassDisplayBlock { display: block; }
+/*============localizerswtichsettings styles=======*/
+
+#divPreview {
+    width: 400px;
+    min-height: 200px;
+    border: 1px solid #000;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.spanPreview {
+    font-weight: bold;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.cssClassFlagButtonWrapper {
+    height: 15px;
+    padding: 2px;
+    width: 250px;
+}
+
+.cssClassFlagButtonWrapper ul li {
+    list-style-type: none;
+    float: left;
+    margin-left: 2px;
+    min-width: 20px;
+    min-height: 10px;
+    background-color: Gray;
+    padding: 2px;
+    border: 1px solid #0a1234;
+}
+
+.cssClassFlagButton { }
+
+#ddlFlags { width: 200px; }
+
+#divCssStyleHeader {
+    width: 444px;
+    height: 20px;
+    padding: 2px;
+    background-color: #c0c0c0;
+    margin-top: 2px;
+}
+
+#divCssStyleHeader span.wrapper { font-weight: bold; }
+
+#divCssStyleHeader span.item {
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+#typeSelect { float: left; }
+
+#typeSelect li {
+    list-style-type: none;
+    float: left;
+    margin-left: 2px;
+}
+
+.cssClassPendingTranslation { background-color: Red !important; }
+/*.cssClassDefaultLanguage{ color: #D15900; font: bold 12px/26px Arial,Helvetica,sans-serif;}
+.cssClassLanuguageName{ font:normal 11px Arial, Helvetica, sans-serif; padding:0 0 0 5px; }
+
+p.cssClassSelectedFiles, p.cssClassSelectedFolder, p.cssClassSelectedLanguage{ overflow:hidden; font:bold 12px Arial, Helvetica, sans-serif;}
+p.cssClassSelectedFiles, p.cssClassSelectedFolder, p.cssClassSelectedLanguage span{ float:left; margin:0 15px 0 0;}*/
+
+.cssClassLanguageEditTopInfo {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.cssClassLanguageEditTopInfo ul {
+    padding: 10px 0 0 0;
+    overflow: hidden;
+}
+
+.cssClassLanguageEditTopInfo ul li {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0 15px 0 0;
+    font: 11px Arial, Helvetica, sans-serif;
+    color: #616161;
+}
+
+.cssClassLanguageEditTopInfo ul li.cssClassFirst {
+    width: 110px;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    color: #616161;
+}
+
+.cssClassLanguageEditpageContent {
+    border: 1px solid #ACD2E2;
+    padding: 5px;
+}
+
+.cssClassLanguageEditpageContent ul.paging { overflow: hidden; }
+
+.cssClassLanguageEditpageContent ul.paging li { }
+
+.cssClassLanguageEditpageContent ul.paging li p {
+    font: normal 11px/20px Arial, Helvetica, sans-serif;
+    color: #666;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+.cssClassLanguageEditpageContent ul.paging li span {
+    float: left;
+    width: 50%;
+}
+
+.cssClassLanguageEditpageContent ul.paging li span textarea {
+    height: 40px;
+    margin: 3px 0 0 0;
+    float: left;
+}
+
+.cssClassLanguageEditpageContent ul.paging li span.cssClassValue a.cssClassEditLink {
+    padding: 0;
+    margin: 0 0 0 12px;
+    display: block;
+    cursor: pointer;
+}
+
+.cssClassLanguageEditpageContent ul.paging li span.cssClassValue a.cssClassTranslateLink {
+    padding: 0;
+    margin: 0 0 0 12px;
+    display: block;
+    cursor: pointer;
+}
+
+.cssClassLanguageEditpageContent ul.paging li span.cssClassValue a img {
+    border: none;
+    margin: 5px 5px 5px 10px;
+    padding: 0;
+}
+
+.cssClassResourceEditorOuter .cssClassButtonWrapper { padding: 0; }
+
+.cssClassButtonWrapper .cssClassBtn {
+    background-color: #2ca3d2;
+    padding: 2px 8px !important;
+    font: normal 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.cssClassButtonWrapper .cssClassBtn:hover { background-color: #57c8f4; }
+
+.simplePagerContainer { }
+
+.simplePagerContainer ul li { /* float:left; width:50%;*/ }
+
+.cssClassGridWrapper th.cssClassIsLangEnabled { width: 65px; }
+
+img.cssClassSelectedLanguageFlag {
+    margin: 5px 0 0 10px;
+    border: none;
+    outline: none;
+}
+
+.cssClassTimeZoneEditorWrapper { }
+
+.cssClassTimeZoneEditorWrapper .cssClassName { width: 250px; }
+
+.cssClassTimeZoneEditorWrapper .cssClassKey { width: 100px; }
+
+.cssClassTimeZoneEditorWrapper .cssClassDefaultValue { }
+
+.cssClassAvailableLanguage {
+    overflow: hidden;
+    height: 40px;
+}
+
+.cssClassAvailableLanguage span, .cssClassAvailableLanguage select, .cssClassAvailableLanguage img { float: left; }
+
+.cssClassAvailableLanguage img { padding: 7px 0 0 5px; }
+
+.cssClassAvailableLanguage .cssClassFormLabel {
+    padding: 0 10px 0 0;
+    font: bold 11px/23px Arial, Helvetica, sans-serif !important;
+}
+
+.cssClassLanguagePackInstaller { }
+
+.cssClassLanguagePackInstaller td { height: auto !important; }
+
+span.cssClassCountry span { font: normal 11px Arial, Helvetica, sans-serif; }
+
+span.cssClassLangName span {
+    font: bold 11px Arial, Helvetica, sans-serif;
+    padding: 0 0 0 10px;
+}
+
+li span#spnDefaultFlag {
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #069;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.cssClassDefaultLanguage {
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #D15900;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 0 0 0 10px;
+}
+
+.cssClassLanuageInstallerInfo { overflow: hidden; }
+
+.cssClassLanuageInstallerInfo ul li {
+    overflow: hidden;
+    list-style: none;
+}
+
+.cssClassLanuageInstallerInfo ul li span.cssClassLeftInfo {
+    float: left;
+    width: 120px;
+}
+
+.cssClassLanuageInstallerInfo ul li span.cssClassRightInfo {
+    float: left;
+    font: normal 12px/22px Arial, Helvetica, sans-serif !important;
+}
+
+.cssClassFormWrapper .cssClassLanuageInstallerInfo .cssClassFormLabel { font: bold 11px/22px Arial, Helvetica, sans-serif !important; }
+
+.cssClassFormWrapper .cssClassLanuageInstallerInfo p {
+    padding: 0;
+    color: #333 !important;
+}
+
+.cssClassFormWrapper .cssClassLanuageInstallerInfo p.cssClassInputCheckBox label { margin: 0 0 0 10px; }
+
+.cssClassLanguagePackInstallerTable { }
+
+.cssClassFormWrapper .cssClassLanguagePackInstallerTable table td { float: left; }
+
+.cssClassLanguagePackInstallerTable input { margin: 0 10px 0 0; }
+
+#divIndicatorBackground {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .80;
+    z-index: 9999;
+}
+
+/*===============popup===================*/
+
+.invisibleDiv {
+    width: auto;
+    background-color: #b0b0b0;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    -webkit-box-shadow: 0px 0px 20px #000;
+    -moz-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    padding: 10px;
+}
+
+.cssClassResxEditorPopUP {
+    position: relative;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background-color: #fff;
+    padding: 6px;
+}
+
+.cssClassLocalizationPopUp {
+    position: relative;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background-color: #fff;
+    padding: 6px;
+}
+
+span.closePopUp {
+    position: absolute;
+    top: -20px;
+    right: -18px;
+    cursor: pointer;
+}
+
+.cssClassFileManagerPopUP h2 {
+    background-color: #f7f4f0;
+    font: bold 18px/24px Arial, Helvetica, sans-serif;
+    color: #716f69;
+    padding: 0 0 0 5px;
+}
+
+ul.jqueryFileTree li ul { display: none; }
+
+
+.cssClassResxDefValue {
+    min-height: 30px;
+    background-color: #e5e5e5;
+    border: 1px solid #d0cbbe;
+    width: 250px;
+    list-style: none outside none !important;
+}
+
+.cssClassResxValueTxt {
+    min-height: 30px;
+    background-color: #fff;
+    border: 1px solid #d0cbbe;
+    width: 250px;
+    overflow: auto;
+}
+
+.myFormWrapper {
+    height: auto;
+    background-color: #e2eef2;
+    border: 1px solid #9ABDCA;
+    color: #691414;
+    font: 11px Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+
+.cssClassKeyValue {
+    color: #666666 !important;
+    font: 11px/20px Arial, Helvetica, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none outside none !important;
+}
+
+.cssClassResxEditorHeader {
+    background-color: #6CACC4;
+    color: #FFFFFF !important;
+    font: bold 12px/30px Arial, Helvetica, sans-serif !important;
+    height: 30px;
+    margin: 10px 0 0;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    text-align: left;
+}
+
+.cssClassResxEditorHeader th { color: #fff; }
+
+.cssClassTranslate { cursor: pointer; }
+
+.cssClassEdit { cursor: pointer; }
+
+.cssClassNoData {
+    width: 98%;
+    border: 2px solid;
+    height: 200px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+.cssClassLocTreeViewWrapper {
+    border: 1px solid #ACD2E2;
+    padding: 5px;
+    float: left;
+    min-height: 450px;
+    height: auto;
+    overflow: scroll;
+    width: 30%;
+    overflow: auto;
+    background: #e2eef2;
+}
+
+.cssClassLocTreeViewWrapper table tr td { padding: 2px 0px 2px 5px; }
+
+.cssClassLocTreeViewWrapper table tr td a {
+    color: #616161;
+    font: bold 11px/20px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.cssClassLocTreeViewWrapper table tr td a:hover {
+    color: #0082b5;
+    text-decoration: underline;
+}
+
+.cssClassLocTreeViewWrapper ul {
+    padding: 0 0 0 15px !important;
+    list-style: none;
+}
+
+.cssClassLocTreeViewWrapper ul li { }
+
+.cssClassLocalValueDiv { min-height: 20px; }
+
+.cssClassLocalValueDiv ul li { list-style: none !important; }
+
+.cssClassResxDefKey { min-height: 50px; }
+
+.cssClassResxDefKey ul li { list-style: none !important; }
+
+.cssClassLocButtons li {
+    list-style: none !important;
+    margin-left: 4px !important;
+}
+
+.cssClassSelectedNode { background-color: #fff; }
